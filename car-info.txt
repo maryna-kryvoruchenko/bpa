@@ -1,0 +1,10 @@
+// object template //
+Make:
+Model:
+Year:
+Color:
+Buy Price:
+Rent Price:
+Image Source:
+ID: 
+Details:
