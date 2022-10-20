@@ -8,3 +8,203 @@ Rent Price:
 Image Source:
 ID: 
 Details:
+
+Make: "Rolls Royce"
+Model: "Dawn"
+Year: 1949
+Color: "Navy Blue"
+Buy Price: 150,000
+Rent Price: 1,200 
+Image Source: "images/1949-Rolls-Royce-Dawn-Drophead.jpg"
+ID: 1
+Details: "Step back in time with this sleek 1949 Rolls Royce Dawn Drophead. It won't take long for the jaws to drop."
+
+Make: "Ford"
+Model: "Thunderbird"
+Year: 1955
+Color: "Light Blue"
+Buy Price: 40,000
+Rent Price: 300
+Image Source: images/1955-thunderbird-blue.jpg"
+ID: 2
+Details: "Doesn't this just take you back? Imagine yourself in this sweet 1955 baby blue Thunderbird. Did we mention it comes with the dice?"
+
+Make: "Ford"
+Model: "GT"
+Year: 1960
+Color: "Black"
+Buy Price: 2,000,000
+Rent Price: 2,000
+Image Source: "images/1960s-Ford-Gt.jpg"
+ID: 3
+Details: "This Ford GT might be over 60 years old, but it will give the young bucks down the road a run for their money."
+
+Make: "Jaguar"
+Model: "E-Type"
+Year: 1961
+Color: "Black"
+Buy Price: 150,000
+Rent Price: 1,200
+Image Source: "images/1961-Jaguar-E-Type.jpg"
+ID: 4
+Details: "Let others drool over the purr of this 1961 Jaguar E-Type."
+
+Make: "Chevrolet"
+Model: "Corvette"
+Year: 1963
+Color: "Blue"
+Buy Price: 75,000
+Rent Price: 600
+Image Source: "images/1963-Chevrolet-Corvette.jpg"
+ID: 5
+Details: "The Corvette has been a classic since the 1950s. Take this 1963 model and show them that it's still got it."
+
+Make: "Ford"
+Model: "Galaxie 300"
+Year: 1963
+Color: "Black"
+Buy Price: 60,000
+Rent Price: 450
+Image Source: "images/1963-galaxie-black.jpg"
+ID: 6
+Details: "Nothing says 'Gentleman' like the 1963 Galaxie 300."
+
+Make: "Cadillac"
+Model: "DeVille"
+Year: 1967
+Color: "White"
+Buy Price: 13,000
+Rent Price: 150
+Image Source: "images/cadillac-white.jpg"
+ID: 7
+Details: 
+
+Make: "Chevrolet"
+Model: "El Camino"
+Year: 1970
+Color: "Blue"
+Buy Price: 25,000
+Rent Price: 200
+Image Source: "images/1970-Chevrolet-El-Camino-SS.jpg"
+ID: 8
+Details:
+
+Make: "BMW"
+Model: "CSL"
+Year: 1972
+Color: 146,000
+Buy Price: 146,000
+Rent Price: 1,200
+Image Source: "images/1972-BMW-CSL"
+ID: 9
+Details: 
+
+Make: 
+Model:
+Year:
+Color:
+Buy Price:
+Rent Price:
+Image Source:
+ID: 10
+Details:
+
+Make:
+Model:
+Year:
+Color:
+Buy Price:
+Rent Price:
+Image Source:
+ID: 11
+Details:
+
+Make:
+Model:
+Year:
+Color:
+Buy Price:
+Rent Price:
+Image Source:
+ID: 12
+Details:
+
+Make:
+Model:
+Year:
+Color:
+Buy Price:
+Rent Price:
+Image Source:
+ID: 13
+Details:
+
+Make:
+Model:
+Year:
+Color:
+Buy Price:
+Rent Price:
+Image Source:
+ID: 14
+Details:
+
+Make:
+Model:
+Year:
+Color:
+Buy Price:
+Rent Price:
+Image Source:
+ID: 15
+Details:
+
+Make:
+Model:
+Year:
+Color:
+Buy Price:
+Rent Price:
+Image Source:
+ID: 16
+Details:
+
+Make:
+Model:
+Year:
+Color:
+Buy Price:
+Rent Price:
+Image Source:
+ID: 17
+Details:
+
+Make:
+Model:
+Year:
+Color:
+Buy Price:
+Rent Price:
+Image Source:
+ID: 18
+Details:
+
+Make:
+Model:
+Year:
+Color:
+Buy Price:
+Rent Price:
+Image Source:
+ID: 19
+Details:
+
+Make:
+Model:
+Year:
+Color:
+Buy Price:
+Rent Price:
+Image Source:
+ID: 20
+Details:
