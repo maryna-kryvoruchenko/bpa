@@ -95,7 +95,7 @@ Year: 1972
 Color: "Black"
 Buy Price: 146,000
 Rent Price: 1,650
-Image Source: "images/1972-bmw-csl"
+Image Source: "images/1972-bmw-csl.jpg"
 ID: 9
 Details: "Steal the show with the BMW CSL and it's unique tail fins."
 
