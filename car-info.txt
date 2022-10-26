@@ -8,3 +8,203 @@ Rent Price:
 Image Source:
 ID: 
 Details:
+
+Make: "Rolls Royce"
+Model: "Dawn"
+Year: 1949
+Color: "Navy Blue"
+Buy Price: 150,000
+Rent Price: 1,650 
+Image Source: "images/1949-rolls-royce-dawn-drophead.jpg"
+ID: 1
+Details: "Step back in time with this sleek 1949 Rolls Royce Dawn Drophead. It won't take long for the jaws to drop."
+
+Make: "Ford"
+Model: "Thunderbird"
+Year: 1955
+Color: "Light Blue"
+Buy Price: 40,000
+Rent Price: 550
+Image Source: images/1955-thunderbird-blue.jpg"
+ID: 2
+Details: "Doesn't this just take you back? Imagine yourself in this sweet 1955 baby blue Thunderbird. Did we mention it comes with the dice?"
+
+Make: "Ford"
+Model: "GT"
+Year: 1960
+Color: "Black"
+Buy Price: 2,000,000
+Rent Price: 20,000
+Image Source: "images/1960-ford-gt.jpg"
+ID: 3
+Details: "This Ford GT might be over 60 years old, but it will give the young bucks down the road a run for their money."
+
+Make: "Jaguar"
+Model: "E-Type"
+Year: 1961
+Color: "Black"
+Buy Price: 150,000
+Rent Price: 1,650
+Image Source: "images/1961-jaguar-e-type.jpg"
+ID: 4
+Details: "Let others drool over the purr of this 1961 Jaguar E-Type."
+
+Make: "Chevrolet"
+Model: "Corvette"
+Year: 1963
+Color: "Blue"
+Buy Price: 75,000
+Rent Price: 900
+Image Source: "images/1963-chevrolet-corvette.jpg"
+ID: 5
+Details: "The Corvette has been a classic since the 1950s. Take this 1963 model and show them that it's still got it."
+
+Make: "Ford"
+Model: "Galaxie 300"
+Year: 1963
+Color: "Black"
+Buy Price: 60,000
+Rent Price: 750
+Image Source: "images/1963-galaxie-black.jpg"
+ID: 6
+Details: "Nothing says 'Gentleman' like the 1963 Galaxie 300."
+
+Make: "Cadillac"
+Model: "DeVille"
+Year: 1967
+Color: "White"
+Buy Price: 13,000
+Rent Price: 300
+Image Source: "images/cadillac-white.jpg"
+ID: 7
+Details: "This one truly is a classic. Take this 2-seater Cadillac DeVille out for a spin and enjoy the smooth ride."
+
+Make: "Chevrolet"
+Model: "El Camino"
+Year: 1970
+Color: "Blue"
+Buy Price: 25,000
+Rent Price: 400
+Image Source: "images/1970-chevrolet-el-camino-ss.jpg"
+ID: 8
+Details: "You will no doubt get a true bang for your buck with the Chevrolet El Camino. Mixing the beloved station wagon with a truck-like bed behind the cab."
+
+Make: "BMW"
+Model: "CSL"
+Year: 1972
+Color: "Black"
+Buy Price: 146,000
+Rent Price: 1,650
+Image Source: "images/1972-bmw-csl.jpg"
+ID: 9
+Details: "Steal the show with the BMW CSL and it's unique tail fins."
+
+Make: "Fiat"
+Model: "500"
+Year: 1972
+Color: Red
+Buy Price: 28,000
+Rent Price: 450
+Image Source: "images/1972-fiat500-red.jpg"
+ID: 10
+Details: "With a vintage Fiat 500, you don't need to be driving European roads to feel like you're somewhere unique."
+
+Make: "BMW"
+Model: "3 Series"
+Year: 1982
+Color: "Red"
+Buy Price: 15,000
+Rent Price: 300
+Image Source: "images/1982-bmw-3series-red.jpg"
+ID: 11
+Details: "Glide through traffic with this slick 1982 BMW 3 Series without having to worry about being cramped in this compact car."
+
+Make: "Jaguar"
+Model: "XJS"
+Year: 1989
+Color: "Black"
+Buy Price: 21,000
+Rent Price: 400
+Image Source: "images/1989-jaguar-xjs.jpg"
+ID: 12
+Details: "Driving to the grocery store will be more than just a ride with in a sleek 1989 Jaguar XJS."
+
+Make: "Ford"
+Model: "Mustang"
+Year: 1967
+Color: "Red"
+Buy Price: 25,000
+Rent Price: 400
+Image Source: "images/1967-ford-mustang.jpg"
+ID: 13
+Details: "It doesn't get any more classic than a Ford Mustang. Relive the old days with this 1967 model."
+
+Make: "Pontiac"
+Model: "Firebird"
+Year: 1979
+Color: "Steel Gray"
+Buy Price: 19,000
+Rent Price: 350
+Image Source: "images/1979-pontiac-firebird.jpg"
+ID: 14
+Details: "Take to the roads and don't look back with this 1979 Pontiac Firebird."
+
+Make: "Volkswagen"
+Model: "Beetle"
+Year: 1970
+Color: "Blue"
+Buy Price: 15,000
+Rent Price: 300
+Image Source: "images/1970-vw-beetle.jpg"
+ID: 15
+Details: "Punches will fly as you drive this iconic 1970 Volkswagen Bug."
+
+Make: "Jaguar"
+Model: "E-Type"
+Year: 1967
+Color: "White"
+Buy Price: 102,000
+Rent Price: 1,200
+Image Source: "images/1967-jaguar-e-convert.jpg"
+ID: 16
+Details: "Let the wind blow through your hair with top down in this 1967 Jaguar E-Type."
+
+Make: "Volkswagen"
+Model: "Beetle"
+Year: 1972
+Color: "Orange"
+Buy Price: 25,000
+Rent Price: 400
+Image Source: "images/1972-vw-beetle.jpg"
+ID: 17
+Details: "Hit the road with this freshly refurbished 1972 Volkswagen Bug."
+
+Make: "Chevrolet"
+Model: "Bel Air"
+Year: 1957
+Color: "Red"
+Buy Price: 65,000
+Rent Price: 800
+Image Source: "images/1957-chevrolet-bel-air.jpg"
+ID: 18
+Details: "Ride low and slow with this vintage 1957 Chevy Bel Air."
+
+Make: "Mercedes-Benz"
+Model: "E W114"
+Year: 1968
+Color: "Brown"
+Buy Price: 10,500
+Rent Price: 250
+Image Source: "images/1968-benz.jpg"
+ID: 19
+Details: "As classy now as they were 50 years ago, a night on the town with this Mercedes-Benz will surely catch some eyes."
+
+Make: "Volkswagen"
+Model: "Transporter"
+Year: 1972
+Color: "Orange"
+Buy Price: 37,000
+Rent Price: 550
+Image Source: "images/1972-vw-bus.jpg"
+ID: 20
+Details: "Relive your hippie days in this 1972 Volkswagen Bus."
