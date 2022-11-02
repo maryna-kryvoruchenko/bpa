@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Inventory Page</title>
+</head>
+<body>
+    <header>
+        <!-- <img src="images/logo.png" alt="bob's auto logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a>Contact Us</a></li>
+            </ul>
+        </nav> -->
+    </header>
+    <main id="inv-page">
+        <div class="inv-hero">
+            <h1>Inventory</h1>
+            <p>Search our Inventory</p>
+        
+            <section class="top-search">
+                <form>
+                    <label for="make">Make</label>
+                    <input type="text" name="make" id="make">
+                    <label for="model">Model</label>
+                    <input type="text" name="model" id="model">
+                    <label for="year">Year</label>
+                    <input type="number" name="year" id="year">
+                    <label for="color">Color</label>
+                    <input type="text" name="color" id="color">
+                    <label for="price">Price Range</label>
+                    <input type="range" name="price" min="50" max="500,000" value="100,000" id="slider">
+                    <button type="submit">Search</button>
+                </form>
+            </section>
+        </div>
+        <div class="inv-body">
+            <div class="filter">
+                <h3>Filter by:</h3>
+                <form>
+                    <label for="make">Make</label>
+                        <input type="checkbox" >
+                        <option value="bmw">BMW</option>
+                        <option value="cadillac">Cadillac</option>
+                        <option value="chevrolet">Chevrolet</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="ford">Ford</option>
+                        <option value="jaguar">Jaguar</option>
+                        <option value="rolls-royce">Rolls Royce</option>
+                        <option value="volkswagon">Volkswagon</option>
+                    <label for="model">Model</label>
+                    <input type="text" name="model" id="model">
+                    <label for="year">Year</label>
+                    <input type="number" name="year" id="year">
+                    <label for="color">Color</label>
+                    <input type="text" name="color" id="color">
+                    <label for="price">Price Range</label>
+                    <input type="range" name="price" min="50" max="500,000" value="100,000" id="slider">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <div class="inventory-grid">
+                <section class="inv-item">
+                    <img class="inv-image" src="/images/1949-Rolls-Royce-Dawn-Drophead.jpg" alt="Rolls Royce Image">
+                    <h4 class="car-name">1949 Rolls Royce Dawn Drophead</h4> 
+                    <p class="color"></p>
+                    <p class="buy-price"></p>
+                    <p class="rent-price"></p>
+                    <p class="details"></p>
+                </section>
+                <section class="inv-item">
+                    <img class="inv-image" src="/images/1949-Rolls-Royce-Dawn-Drophead.jpg" alt="Rolls Royce Image">
+                    <h4 class="car-name">1949 Rolls Royce Dawn Drophead</h4> 
+                    <p class="color"></p>
+                    <p class="buy-price"></p>
+                    <p class="rent-price"></p>
+                    <p class="details"></p>
+                </section>
+                <section class="inv-item">
+                    <img class="inv-image" src="/images/1949-Rolls-Royce-Dawn-Drophead.jpg" alt="Rolls Royce Image">
+                    <h4 class="car-name">1949 Rolls Royce Dawn Drophead</h4> 
+                    <p class="color"></p>
+                    <p class="buy-price"></p>
+                    <p class="rent-price"></p>
+                    <p class="details"></p>
+                </section>
+                <section class="inv-item">
+                    <img class="inv-image" src="/images/1949-Rolls-Royce-Dawn-Drophead.jpg" alt="Rolls Royce Image">
+                    <h4 class="car-name">1949 Rolls Royce Dawn Drophead</h4> 
+                    <p class="color"></p>
+                    <p class="buy-price"></p>
+                    <p class="rent-price"></p>
+                    <p class="details"></p>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
