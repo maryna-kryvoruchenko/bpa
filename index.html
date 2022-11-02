@@ -5,63 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Company Name</title>
+    <script src="main.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <title>Old Bob's Classic Auto</title>
 </head>
 <body>
     <main>
-        <h1>Welcome to Old Bob's Classic Auto!</h1>
-        <h3>Our Newest Selection</h3>
-        <div id="slider">
-            <input type="radio" name="slider" id="slide1" checked>            
-            <input type="radio" name="slider" id="slide2">            
-            <input type="radio" name="slider" id="slide3">            
-            <input type="radio" name="slider" id="slide4">            
-            <div id="slides">
-                <div id="overflow">
-                    <div class="inner">
-                        <div class="slide slide_1">
-                            <div class="slide-content">
-                                <h2>Slide 1</h2>
-                                <p>Content for slide 1</p>
-                            </div>
-                        </div>
-                        <div class="slide slide_2">
-                            <div class="slide-content">
-                                <h2>Slide 2</h2>
-                                <p>Content for slide 2</p>
-                            </div>
-                        </div>
-                        <div class="slide slide_3">
-                            <div class="slide-content">
-                                <h2>Slide 3</h2>
-                                <p>Content for slide 3</p>
-                            </div>
-                        </div>
-                        <div class="slide slide_4">
-                            <div class="slide-content">
-                                <h2>Slide 4</h2>
-                                <p>Content for slide 4</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="controls">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
-                <label for="slide4"></label>
-            </div>
-            <div id="bullets">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
-                <label for="slide4"></label>
-            </div>            
+        <div id="slider-container">
+            <div id="slider--text"></div>
         </div>
-        <div class="auctionDiv">
-            <h2>Join the Auction!</h2>
-        </div>
+        <h1 id="home-selection">Newest Selection</h3>
+        <section class="slider-wrapper">
+            <button class="slide-arrow" id="slide-arrow-prev">
+              &#8249;
+            </button>
+            <button class="slide-arrow" id="slide-arrow-next">
+              &#8250;
+            </button>
+            <ul class="slides-container" id="slides-container">
+                <img class="slide" src="images/1949-Rolls-Royce-Dawn-Drophead.jpg" alt="1949 Rolls Royce Dawn Dephead">
+                <img class="slide" src="images/1955-thunderbird-blue.jpg" alt="1955 Thunderbird Blue">
+                <img class="slide" src="images/1960s-Ford GT.jpg" alt="1960 Ford GT">
+                <img class="slide" src="images/1961-Jaguar-E-type.jpg" alt="1961 Jaguar E type">
+                <img class="slide" src="images/1963-Chevrolet-Corvette.jpg" alt="1963 Chevrolet Corvette">
+            </ul>
+          </section>
+          <div id="joinAuction">
+            <h1 id="auction-title">
+                Join the Auction!
+            </h1>
+            <h3 id="auctionAnnouncement">The next auction is in...</h3>
+            <div id="auctionCount"></div>
+          </div>
+          <div id="testContainer">
+            <img class="testDriveImg" src="images/testDrive.jpg" alt="car picture">
+            <button class="btn">Test Drive</button> 
+          </div>
     </main>
 </body>
 </html>
