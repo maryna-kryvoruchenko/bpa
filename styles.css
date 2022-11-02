@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Yeseva+One&display=swap');
 
 body {
@@ -258,5 +259,101 @@ header {
 
 @media only screen and (max-width: 770px) {
  
+}
+
+
+
+*{
+  box-sizing: border-box;
+}
+
+header{
+  position: relative;
+  width:100%;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{
+  width: 100px;
+  margin: 8px;
+}
+.navbar__menu{
+  display:flex;
+  list-style:none;
+}
+.navbar__menu__item{
+  padding: 8px 12px;
+  margin: 0 4px;
+  cursor:pointer;
+  
+}
+.navbar__toggle-btn{
+  position: absolute;
+  right: 32px;
+  top: 24px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  display:none;
+}
+
+main{
+  height: 800px;
+}
+footer{
+  margin: 32px;
+}
+#footer{
+  display: flex;
+  
+  justify-content: space-between;
+  border-bottom: 1px solid #D3D3D3;
+}
+.footer__item{
+  display:flex;
+  flex-direction: column;
+}
+.footer__item p{
+  margin-top: 0;
+  font-weight:600;
+}
+.footer__item a{
+  margin-bottom: 16px;
+  text-decoration :none;
+  color: black;
+}
+#store_hours{
+  padding: 12px;
+  width: 260px;
+}
+.rights{
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 768px){
+  header{
+    flex-direction:column;
+    align-items: flex-start;
+  }
+  .navbar__menu{
+    display: none;
+  }
+  .navbar__toggle-btn{
+    display: block;
+  }
+  .navbar__menu{
+  flex-direction: column;
+  text-align:center;
+  width: 100%;
+  display:none;
+  }
+  .navbar__menu.open{
+  display:block;
+
+  }
+  #footer{
+    display:none;
+  }
 }
 

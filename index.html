@@ -7,9 +7,22 @@
     <link rel="stylesheet" href="styles.css">
     <script src="main.js" defer></script>
     <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <script src="https://kit.fontawesome.com/67ea2a523c.js" crossorigin="anonymous"></script>
     <title>Old Bob's Classic Auto</title>
 </head>
 <body>
+  <header>
+        <img src="images/logo1.png" alt="logo" class="logo">
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item">About</li>
+            <li class="navbar__menu__item">Contact</li>
+            <li class="navbar__menu__item">Auctions</li>
+            <li class="navbar__menu__item">Inventory</li>
+        </ul>
+        <button class="navbar__toggle-btn">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+        </button>
+    </header>
     <main>
         <div id="slider-container">
             <div id="slider--text"></div>
@@ -42,5 +55,28 @@
             <button class="btn">Test Drive</button> 
           </div>
     </main>
-</body>
+    <footer>
+      <div id="footer">
+          <div class="footer__logo">Company Logo<img src="" alt=""></div>
+          <div class="footer__item">
+              <p>Company</p>
+              <a href="">Contact Us</a>
+              <a href="">About</a>
+          </div>
+          <div class="footer__item">
+              <p>Quick Link</p>
+              <a href="">Pricing</a>
+          </div>
+          <div class="footer__item">
+              <p>Store Hours</p>
+              <input type="text" id="store_hours" placeholder="Show store hours">
+          </div>
+      </div>
+      <div class="rights">
+          <p>&copy; 2022 Company name. All rights reserved (Include BPA somewhere?)</p>
+      </div>
+      
+    </footer>
+    
+
 </html>
