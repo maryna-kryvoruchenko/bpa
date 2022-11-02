@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auctions</title>
+</head>
+<body>
+    <div id="content">
+        <form>
+            <p>*Name should match government issued ID and name as found on any vehicle titles</p>
+            <label for="fname">First Name*:</label> 
+            <input id="fname" type="text" name="firstname" required>
+
+            <label for="lname">Last Name*:</label> 
+            <input id="lname" type="text" name="lastname" required>
+
+            <label for="phone">Phone*:</label> 
+            <input id="phone" type="tel" name="phonenumber" placeholder="(555) 555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+            <label for="email">Email (optional):</label> 
+            <input id="email" type="email" name="email" placeholder="email@domain.com">
+
+            <input type="submit" value="Join Now">
+        </form>
+
+       
+    </div>
+</body>
+</html>
