@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <title>Old Bob's Classic Auto</title>
 </head>
 <body>
-    
+    <main>
+        <div id="slider-container">
+            <div id="slider--text"></div>
+        </div>
+        <h1 id="home-selection">Newest Selection</h3>
+        <section class="slider-wrapper">
+            <button class="slide-arrow" id="slide-arrow-prev">
+              &#8249;
+            </button>
+            <button class="slide-arrow" id="slide-arrow-next">
+              &#8250;
+            </button>
+            <ul class="slides-container" id="slides-container">
+                <img class="slide" src="images/1949-Rolls-Royce-Dawn-Drophead.jpg" alt="1949 Rolls Royce Dawn Dephead">
+                <img class="slide" src="images/1955-thunderbird-blue.jpg" alt="1955 Thunderbird Blue">
+                <img class="slide" src="images/1960s-Ford GT.jpg" alt="1960 Ford GT">
+                <img class="slide" src="images/1961-Jaguar-E-type.jpg" alt="1961 Jaguar E type">
+                <img class="slide" src="images/1963-Chevrolet-Corvette.jpg" alt="1963 Chevrolet Corvette">
+            </ul>
+          </section>
+          <div id="joinAuction">
+            <h1 id="auction-title">
+                Join the Auction!
+            </h1>
+            <h3 id="auctionAnnouncement">The next auction is in...</h3>
+            <div id="auctionCount"></div>
+          </div>
+          <div id="testContainer">
+            <img class="testDriveImg" src="images/testDrive.jpg" alt="car picture">
+            <button class="btn">Test Drive</button> 
+          </div>
+    </main>
 </body>
 </html>

@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Yeseva+One&display=swap');
+body {
+   margin: 0;
+   padding: 0;
+}
+.home-logo {
+   height: 200px;
+}
+#home-selection {
+   font-family: 'Yeseva One', cursive;
+   text-align: center;
+   padding-top: 30px;
+}
+#slider-container {
+   background-color: #f2e2c4;
+}
+#slider--text {
+   display: flex;
+   justify-content: center;
+   height: 200px;
+   align-items: center;
+   font-family: 'Yeseva One', cursive;
+   color: #73221A;
+}
+
+.fade-in {
+   animation: fade 4s infinite;
+}
+
+@keyframes fade {
+   0% {
+       opacity: 0;
+       transform: rotate3d(2, 2, 0, 48deg);
+   }
+   20% {
+       opacity: 1;
+       transform: rotate3d(0, 0, 0, 24deg);
+   }
+   80% {
+       opacity: 1;
+       transform: rotate3d(0, 0, 0, 24deg);
+   }
+   100% {
+       opacity: 0;
+       transform: rotate3d(-2, -2, 0, 48deg);
+   }
+}
+ .slider-wrapper {
+   margin: 1rem auto;
+   position: relative;
+   overflow: hidden;
+   max-width: 60%;
+ }
+ 
+ .slides-container {
+   width: 100%;
+   display: flex;
+   overflow: scroll;
+   scroll-behavior: smooth;
+   list-style: none;
+   margin: 0 auto;
+   padding: 0;
+ }
+ 
+ .slide-arrow {
+   position: absolute;
+   display: flex;
+   top: 0;
+   bottom: 0;
+   margin: auto;
+   height: 4rem;
+   background-color: white;
+   border: none;
+   width: 2rem;
+   font-size: 3rem;
+   padding: 0;
+   cursor: pointer;
+   opacity: 0.5;
+   transition: opacity 100ms;
+ }
+ 
+ .slide-arrow:hover,
+ .slide-arrow:focus {
+   opacity: 1;
+ }
+ 
+ #slide-arrow-prev {
+   left: 0;
+   padding-left: 0.25rem;
+   border-radius: 0 2rem 2rem 0;
+ }
+ 
+ #slide-arrow-next {
+   right: 0;
+   padding-left: 0.75rem;
+   border-radius: 2rem 0 0 2rem;
+ }
+ 
+ .slide {
+   width: 100%;
+   height: 100%;
+   flex: 1 0 100%;
+ }
+ /* Test */
+ /* .slide:nth-child(1) {
+   background-color: #49b293;
+ }
+ 
+ .slide:nth-child(2) {
+   background-color: #b03532;
+ }
+ 
+ .slide:nth-child(3) {
+   background-color: #6a478f;
+   margin: 0;
+ }
+ 
+ .slide:nth-child(4) {
+   background-color: #da6f2b;
+ } */
+ #testContainer {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+#testContainer img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+#testContainer .btn {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #73221A;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+#testContainer .btn:hover {
+  background-color: #401410;
+}
+#joinAuction {
+  background-color: #f2e2c4;
+}
+#auction-title {
+   font-family: 'Yeseva One', cursive;
+   text-align: center;
+   color: #73221A;
+   padding-top: 10px;
+}
+#auctionAnnouncement {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #8c8074;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+#auctionCount {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #73221A;
+  font-size: 3em;
+}
+ @media only screen and (max-width: 550px) {
+  body {
+    background-color: blue;
+  }
+   #slider--text {
+      height: 100px;
+   }
+ }
+ @media only screen and (max-width: 770px) {
+
+ }
