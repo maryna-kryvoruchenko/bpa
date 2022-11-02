@@ -30,6 +30,15 @@ header{
   cursor:pointer;
   
 }
+.navbar__toggle-btn{
+  position: absolute;
+  right: 32px;
+  top: 24px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  display:none;
+}
 
 main{
   height: 800px;
@@ -62,4 +71,30 @@ footer{
 }
 .rights{
   margin-top: 50px;
+}
+
+@media screen and (max-width: 768px){
+  header{
+    flex-direction:column;
+    align-items: flex-start;
+  }
+  .navbar__menu{
+    display: none;
+  }
+  .navbar__toggle-btn{
+    display: block;
+  }
+  .navbar__menu{
+  flex-direction: column;
+  text-align:center;
+  width: 100%;
+  display:none;
+  }
+  .navbar__menu.open{
+  display:block;
+
+  }
+  #footer{
+    display:none;
+  }
 }
