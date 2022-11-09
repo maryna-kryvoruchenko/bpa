@@ -231,7 +231,7 @@ header {
 
 /* ---------------------- Media Queries -------------------- */
 
-@media screen and (min-width: 550px) {
+@media screen and (max-width: 550px) {
     body {
         background-color: blue;
       }
