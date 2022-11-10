@@ -202,24 +202,30 @@ span, a, p, label {
 
 
 /* -------------- INVENTORY PAGE ---------------- */
-header img {
+/* header img {
     width: 200px;
 }
 
 header {
     display: inline;
-}
+} */
 
 #inv-page {
     margin: auto;
-    width: 95%;
+    /* width: 95%; */
 }
 .inv-hero {
     height: 20em;
     text-align: center;
     margin-bottom: 3em;
+    padding: 2em;
     background-color: var(--main-red);
     color: var(--cream);
+    background:linear-gradient(0deg, #73211ab3, #73211ab3), url(/images/1967-cadillac-white.jpg) center no-repeat;
+    background-size: cover;
+}
+.inv-hero h1{
+    font-size: 3.5em;
 }
 .inv-item {
     margin: .5em;
@@ -229,12 +235,16 @@ header {
     max-width: 100%;
 }
 
+#inv-page input {
+    padding: .5em;
+    border: 2px solid var(--cream);
+    border-radius: 4px;
+}
+
 /* ---------------------- Media Queries -------------------- */
 
 @media screen and (min-width: 550px) {
-    body {
-        background-color: blue;
-      }
+
        #slider--text {
           height: 100px;
        }
@@ -298,9 +308,6 @@ header{
   display:none;
 }
 
-main{
-  height: 800px;
-}
 footer{
   margin: 32px;
 }
