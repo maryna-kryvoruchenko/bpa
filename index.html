@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home.css">
     <script src="main.js" defer></script>
-    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="icon" type="image/x-icon" href="images/homeLogo.png">
     <script src="https://kit.fontawesome.com/67ea2a523c.js" crossorigin="anonymous"></script>
     <title>Old Bob's Classic Auto</title>
 </head>
 <body>
   <header>
-        <img src="images/logo1.png" alt="logo" class="logo">
+        <img src="images/homeLogo.png" alt="logo" class="logo">
         <ul class="navbar__menu">
             <li class="navbar__menu__item">About</li>
             <li class="navbar__menu__item">Contact</li>
@@ -24,24 +25,38 @@
         </button>
     </header>
     <main>
-        <div id="slider-container">
+        <div id="slider-text-container">
             <div id="slider--text"></div>
         </div>
         <h1 id="home-selection">Newest Selection</h3>
         <section class="slider-wrapper">
-            <button class="slide-arrow" id="slide-arrow-prev">
-              &#8249;
-            </button>
-            <button class="slide-arrow" id="slide-arrow-next">
-              &#8250;
-            </button>
-            <ul class="slides-container" id="slides-container">
-                <img class="slide" src="images/1949-Rolls-Royce-Dawn-Drophead.jpg" alt="1949 Rolls Royce Dawn Dephead">
-                <img class="slide" src="images/1955-thunderbird-blue.jpg" alt="1955 Thunderbird Blue">
-                <img class="slide" src="images/1960s-Ford GT.jpg" alt="1960 Ford GT">
-                <img class="slide" src="images/1961-Jaguar-E-type.jpg" alt="1961 Jaguar E type">
-                <img class="slide" src="images/1963-Chevrolet-Corvette.jpg" alt="1963 Chevrolet Corvette">
-            </ul>
+            <div class="slide-container">
+                <div class="slide fading">
+                 <img src='images/1949-Rolls-Royce-Dawn-Drophead.jpg' alt='1949 Rolls Royce'>
+               </div>
+               <div class="slide fading">
+                 <img src='images/1957-chevrolet-bel-air.jpg' alt='1957 chevrolet bel air'>
+               </div>
+               <div class="slide fading">
+                 <img src='images/1961-Jaguar-E-type.jpg' alt='1961 Jaguar E'>
+               </div>
+               <div class="slide fading">
+                 <img src='images/1963-galaxie-black.jpg' alt='1963 Galaxie Black'>
+               </div>
+               <div class="slide fading">
+                <img src='images/1968-benz.jpg' alt='1968 Benz'>
+               </div>
+         
+               <a href="#" class="prev" title="Previous">&#10094</a>
+               <a href="#" class="next" title="Next">&#10095</a>
+             </div>
+             <div class="dots-container">
+               <span class="dot"></span>
+               <span class="dot"></span>
+               <span class="dot"></span>
+               <span class="dot"></span>
+               <span class="dot"></span>
+             </div>
           </section>
           <div id="joinAuction">
             <h1 id="auction-title">

@@ -1,24 +1,48 @@
-//image slider
-const slidesContainer = document.getElementById("slides-container");
-const slide = document.querySelector(".slide");
-const prevButton = document.getElementById("slide-arrow-prev");
-const nextButton = document.getElementById("slide-arrow-next");
+//Picture Slideshow
+var currentSlide = 0;
+const slides = document.querySelectorAll(".slide")
+const dots = document.querySelectorAll('.dot')
 
-nextButton.addEventListener("click", () => {
-  const slideWidth = slide.clientWidth;
-  slidesContainer.scrollLeft += slideWidth;
-});
+const init = (n) => {
+  slides.forEach((slide) => {
+    slide.style.display = "none"
+    dots.forEach((dot) => {
+      dot.classList.remove("active")
+    })
+  })
+  slides[n].style.display = "block"
+  dots[n].classList.add("active")
+}
+document.addEventListener("DOMContentLoaded", init(currentSlide))
 
-prevButton.addEventListener("click", () => {
-  const slideWidth = slide.clientWidth;
-  slidesContainer.scrollLeft -= slideWidth;
-});
+const next = () => {
+    currentSlide >= slides.length - 1 ? currentSlide = 0 : currentSlide++
+    init(currentSlide)
+  }
+  
+  const prev = () => {
+    currentSlide <= 0 ? currentSlide = slides.length - 1 : currentSlide--
+    init(currentSlide)
+  }
+  
+  document.querySelector(".next").addEventListener('click', next)
+  document.querySelector(".prev").addEventListener('click', prev)
 
+setInterval(() => {
+    next()
+  }, 5000);
+
+dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+    init(index)
+    currentSlide = i
+    })
+  })
 //animated title
 if (document.getElementById("slider--text")) {
     let slides = [
         "<h1>Welcome to Old Bob's Classic Auto</h1>",
-        "<img class='home-logo' src='images/logo.png' alt='logo'>"
+        "<img class='home-logo' src='images/homeLogo.png' alt='logo'>"
     ];
 
     let i = 0;

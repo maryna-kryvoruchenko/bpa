@@ -1,0 +1,35 @@
+ /* Animated title */
+ #slider-text-container {
+    background-color: #f2e2c4;
+ }
+ #slider--text {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    align-items: center;
+    font-family: 'Yeseva One', cursive;
+    color: #73221A;
+ }
+ 
+ .fade-in {
+    animation: fadeText 4s infinite;
+ }
+ 
+ @keyframes fadeText {
+    0% {
+        opacity: 0;
+        transform: rotate3d(2, 2, 0, 48deg);
+    }
+    20% {
+        opacity: 1;
+        transform: rotate3d(0, 0, 0, 24deg);
+    }
+    80% {
+        opacity: 1;
+        transform: rotate3d(0, 0, 0, 24deg);
+    }
+    100% {
+        opacity: 0;
+        transform: rotate3d(-2, -2, 0, 48deg);
+    }
+ }
