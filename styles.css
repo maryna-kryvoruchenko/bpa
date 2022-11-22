@@ -210,6 +210,10 @@ span, a, p, label {
   display:block;
   margin: 0 auto;
 }
+.about__item{
+  display:flex;
+
+}
 #about h1{
   text-align:center;
   margin: 32px;
