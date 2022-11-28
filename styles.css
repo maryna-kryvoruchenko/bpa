@@ -229,6 +229,59 @@ header {
     max-width: 100%;
 }
 
+/* ---------------------- Auction Page -------------------- */
+
+
+
+#auction-content {
+  width: 300px;
+  margin: 100px auto;
+}
+
+#auction-content form {
+  background-color: #D3D3D3;
+  border-radius: 5pt;
+  border: 1px solid black;
+  position: relative;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+#auction-content h1 {
+  margin: 16px 16px;
+  text-align: center;
+}
+
+#auction-content p {
+  margin: 16px 16px;
+}
+
+#auction-content form label, input {
+  display: block;
+  margin: 5px 0 5px 15px;
+}
+
+#auction-submit {
+  position: absolute; 
+  right: 0;
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 5pt;
+}
+
+#auction-submit:hover {
+  background-color: #73221A;
+  color:#D3D3D3
+}
+
+.auction-img {
+ display: none;
+}
+
+.auction-img img {
+  display: none;
+}
+
 /* ---------------------- Media Queries -------------------- */
 
 @media screen and (min-width: 550px) {
@@ -255,13 +308,68 @@ header {
         display: grid;
         grid-template-columns: repeat(3, 33%);
     }
+
+    #auction-content {
+      width: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      justify-items: center;
+    }
+
+    #auction-content form label, input {
+      display: block;
+      margin: 5px 0 10px 15px;
+    }
+
+    .auction-img {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .auction-img img {
+      display: block;
+      border-radius: 5pt;
+      width: 300px;
+    }
+
+    .auction-col1 {
+      grid-column: 1/2;
+      grid-row: 1;
+    }
+
+    #auction-content form
+    {
+      grid-column: 2/3;
+      grid-row: 1/4;
+      width: 415px;
+    }
+
+    #auction-submit {
+      font-size: 2em;
+      padding: 5px 10px;
+    }
+    
+    .auction-col2 {
+      grid-column: 3/4;
+    }
+
+    .auction-row1 {
+      grid-row: 1/2;
+      margin-right: 10px;
+    }
+    
+    .auction-row2 {
+      grid-row: 2/3;
+      margin-left: 10px;
+    }
+    
+    .auction-row3 {
+      grid-row: 3/4;
+      margin-right: 10px;
+    }
 }
-
-@media only screen and (max-width: 770px) {
- 
-}
-
-
 
 *{
   box-sizing: border-box;
@@ -298,9 +406,9 @@ header{
   display:none;
 }
 
-main{
+/* main{
   height: 800px;
-}
+} */
 footer{
   margin: 32px;
 }
@@ -355,5 +463,10 @@ footer{
   #footer{
     display:none;
   }
+
+  
 }
 
+body {
+  background-color: #8c8074;
+}

@@ -1,31 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auctions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="auction.js"></script>
+
 </head>
+
 <body>
-    <div id="content">
-        <form>
-            <p>*Name should match government issued ID and name as found on any vehicle titles</p>
-            <label for="fname">First Name*:</label> 
-            <input id="fname" type="text" name="firstname" required>
+    <header>
+        <img src="images/logo1.png" alt="logo" class="logo">
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item">About</li>
+            <li class="navbar__menu__item">Contact</li>
+            <li class="navbar__menu__item">Auctions</li>
+            <li class="navbar__menu__item">Inventory</li>
+        </ul>
+        <button class="navbar__toggle-btn">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+        </button>
+    </header>
+    <main>
+        <div id="auction-content">
+            <div class="auction-img auction-col1 auction-row1"><img src="images/1970-Chevrolet-EI-Camino-SS.jpg" alt="1970 Chevy El Camino"></div>
+            <div class="auction-img auction-col1 auction-row2"><img src="images/1968-benz.jpg" alt="1968 Benz"></div>
+            <div class="auction-img auction-col1 auction-row3"><img src="images/1955-thunderbird-blue.jpg" alt="1955 T-Bird"></div>
+            <form>
+                <h3 id="auctionAnnouncement">The next auction is in...</h3>
+                <div id="auctionCount"></div>
+                <h1>Join the Auction!</h1>
+                <p>*Your name should match government issued ID and name as found on any vehicle titles</p>
+                <label for="fname">First Name*:</label>
+                <input id="fname" type="text" name="firstname" required>
 
-            <label for="lname">Last Name*:</label> 
-            <input id="lname" type="text" name="lastname" required>
+                <label for="lname">Last Name*:</label>
+                <input id="lname" type="text" name="lastname" required>
 
-            <label for="phone">Phone*:</label> 
-            <input id="phone" type="tel" name="phonenumber" placeholder="(555) 555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <label for="phone">Phone*:</label>
+                <input id="phone" type="tel" name="phonenumber" placeholder="(555) 555-5555"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
 
-            <label for="email">Email (optional):</label> 
-            <input id="email" type="email" name="email" placeholder="email@domain.com">
+                <label for="email">Email (optional):</label>
+                <input id="email" type="email" name="email" placeholder="email@domain.com">
 
-            <input type="submit" value="Join Now">
-        </form>
+                <input id="auction-submit" type="submit" value="Join Now">
+            </form>
+            <div class="auction-img auction-col2 auction-row1"><img src="images/1972-fiat500-red.jpg" alt="1972 Fiat500"></div>
+            <div class="auction-img auction-col2 auction-row2"><img src="images/1982-bmw-3series-red.jpg" alt="1982 BMW"></div>
+            <div class="auction-img auction-col2 auction-row3"><img src="images/1967-cadillac-white.jpg" alt="1967 Cadillac"></div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer">
+            <div class="footer__logo">Company Logo<img src="" alt=""></div>
+            <div class="footer__item">
+                <p>Company</p>
+                <a href="">Contact Us</a>
+                <a href="">About</a>
+            </div>
+            <div class="footer__item">
+                <p>Quick Link</p>
+                <a href="">Pricing</a>
+            </div>
+            <div class="footer__item">
+                <p>Store Hours</p>
+                <input type="text" id="store_hours" placeholder="Show store hours">
+            </div>
+        </div>
+        <div class="rights">
+            <p>&copy; 2022 Company name. All rights reserved (Include BPA somewhere?)</p>
+        </div>
 
-       
-    </div>
+    </footer>
 </body>
+
 </html>
