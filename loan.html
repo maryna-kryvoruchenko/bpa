@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <script defer src="loan.js"></script>
+</head>
+<body>
+    <main>
+        <form name="calcLoan" onsubmit="computeLoan(); return false">
+            <label for="amount">Loan Amount:</label>
+            <input id="amount" type="number" name="amount" pattern="[1-9]" required>
+            <br>
+            <label for="rate">Interest Rate:</label>
+            <input id="rate" type="number" name="rate" pattern="[1-9]" required>
+            <br>
+            <label for="months">Length of Term (in months):</label>
+            <input id="months" type="number" name="rate" pattern="[1-9]" required>
+            <br>
+            <input id="submit" type="submit" value="Compute">
+
+            <h2>Monthly Payment: <span id="total"></span></h2>
+        </form>
+    </main>
+</body>
+</html>
