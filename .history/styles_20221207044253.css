@@ -337,7 +337,7 @@ header.navbar--dark{
 }
 .logo img{
   width: 90px;
-  margin-top: 12px;
+  margin: 12px;
   margin-left: 20px;
 }
 .navbar__menu{

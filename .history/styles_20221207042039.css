@@ -203,7 +203,6 @@ span, a, p, label {
 #about{
   
   margin: 0 auto;
-  /* margin: 12px; */
   /* text-align:center; */
   max-width: 1000px;
 }
@@ -331,13 +330,9 @@ header.navbar--dark{
   /* opacity: 0.8; */
   padding: 4px;
 }
-.logo{
-  /* overflow:hidden; */
-  /* height: 102px; */
-}
 .logo img{
   width: 90px;
-  margin-top: 12px;
+  margin: 12px;
   margin-left: 20px;
 }
 .navbar__menu{
@@ -354,7 +349,6 @@ header.navbar--dark{
   border-radius:4px;
   transition: 0.35s;
   /* font-weight: 500; */
-  font-size: 18px;
 }
 .navbar__menu__item:hover{
   border-color:white;
@@ -408,7 +402,6 @@ footer{
   header{
     flex-direction:column;
     align-items: flex-start;
-    background-color: #f2e2c4d2;
   }
   /* .navbar__menu{
     display: none;
@@ -423,8 +416,7 @@ footer{
   display:none;
   }
   .navbar__menu.open{
-    
-    display:flex;
+  display:block;
 
   }
   #footer{

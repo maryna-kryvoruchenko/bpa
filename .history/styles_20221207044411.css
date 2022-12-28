@@ -336,8 +336,8 @@ header.navbar--dark{
   /* height: 102px; */
 }
 .logo img{
-  width: 90px;
-  margin-top: 12px;
+  width: 80px;
+  margin: 12px;
   margin-left: 20px;
 }
 .navbar__menu{
@@ -371,7 +371,7 @@ header.navbar--dark{
   display:none;
 }
 main{
-  padding-top: 100px;
+  padding-top: 96px;
 }
 
 footer{

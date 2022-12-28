@@ -333,11 +333,11 @@ header.navbar--dark{
 }
 .logo{
   /* overflow:hidden; */
-  /* height: 102px; */
+  height: 102px;
 }
 .logo img{
   width: 90px;
-  margin-top: 12px;
+  margin: 12px;
   margin-left: 20px;
 }
 .navbar__menu{
@@ -354,7 +354,7 @@ header.navbar--dark{
   border-radius:4px;
   transition: 0.35s;
   /* font-weight: 500; */
-  font-size: 18px;
+  font-size: 24px;
 }
 .navbar__menu__item:hover{
   border-color:white;
