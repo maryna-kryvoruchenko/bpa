@@ -263,6 +263,7 @@ span, a, p, label {
 }
 #about > p:nth-of-type(1){
   color: #304751;
+  font-weight: bold;
 }
 
 /* -------------- INVENTORY PAGE ---------------- */
