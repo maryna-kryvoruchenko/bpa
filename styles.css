@@ -206,10 +206,19 @@ span, a, p, label {
   /* margin: 12px; */
   /* text-align:center; */
   max-width: 1000px;
+  margin-bottom: 100px;
 }
-#about img{
+#about > img{
+  max-width:800px;
   display:block;
   margin: 0 auto;
+}
+#about > p::first-letter{
+  color:var(--main-red);
+  font-size:2.6em;
+  margin-right:5px;
+  float:left;
+  line-height:1;
 }
 .about__item{
   display:flex;
@@ -428,6 +437,14 @@ footer{
 
   }
   #footer{
+    display:none;
+  }
+
+  /* about page */
+  #about > img{
+    width:90%;
+  }
+  .sub-img1, .sub-img2{
     display:none;
   }
 }
