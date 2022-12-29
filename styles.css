@@ -199,7 +199,71 @@ span, a, p, label {
   @media only screen and (max-width: 550px) {
    
   }
-
+/* ABOUT PAGE */
+#about{
+  
+  margin: 50px auto;
+  /* margin: 12px; */
+  /* text-align:center; */
+  max-width: 1000px;
+  margin-bottom: 100px;
+  /* box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.93); */
+  box-shadow: 0px 1px 6px 3px rgba(115,34,26,0.93);
+  border-radius:20px;
+  /* position:relative; */
+  overflow:hidden;
+}
+#about > img{
+  max-width:800px;
+  display:block;
+  margin: 0 auto;
+  margin-top:20px;
+  border-radius:10px;
+  /* position:absolute; */
+  /* top: -50px; */
+}
+#about > p::first-letter{
+  color:var(--main-red);
+  font-size:2.6em;
+  margin-right:5px;
+  float:left;
+  line-height:1;
+}
+.about__item{
+  display:flex;
+}
+.sub-img1{
+  margin-left: 20px;
+}
+.sub-img2{
+  margin-right:20px;
+  margin-bottom:10px;
+}
+.sub-img1 img, .sub-img2 img{
+  border-radius:10px;
+}
+#about h1{
+  text-align:center;
+  margin: 32px;
+} 
+#about h1:after {
+  content:"";
+  display:block;
+  width: 60px;
+  border-bottom: 1px solid #bcbcbc;
+  margin: 20px auto;
+}
+#about h2{
+  text-align:center;
+  margin: 32px;
+}
+#about p{
+  margin: 32px;
+  margin-bottom: 60px;
+}
+#about > p:nth-of-type(1){
+  color: #304751;
+}
 
 /* -------------- INVENTORY PAGE ---------------- */
 /* header img {
@@ -393,25 +457,51 @@ header {
 }
 
 header{
-  position: relative;
+  position: fixed;
+  font-family: var(--head-font);
+  /* position: relative; */
   width:100%;
   display: flex;
   justify-content:space-between;
+  transition: all 0.35s ease-in;
   align-items:center;
+  z-index: 1;
+}
+header.navbar--dark{
+  /* position:fixed; */
+  background-color: #f2e2c4d2;
+  /* opacity: 0.8; */
+  padding: 4px;
 }
 .logo{
-  width: 100px;
-  margin: 8px;
+  /* overflow:hidden; */
+  /* height: 102px; */
+}
+.logo img{
+  width: 90px;
+  margin-top: 12px;
+  margin-left: 20px;
 }
 .navbar__menu{
   display:flex;
   list-style:none;
+  margin-right: 20px;
 }
 .navbar__menu__item{
   padding: 8px 12px;
   margin: 0 4px;
   cursor:pointer;
-  
+  text-decoration: none;
+  color: var(--main-red);
+  border-radius:4px;
+  transition: 0.35s;
+  /* font-weight: 500; */
+  font-size: 18px;
+}
+.navbar__menu__item:hover{
+  border-color:white;
+  background:var(--main-red);
+  color:white;
 }
 .navbar__toggle-btn{
   position: absolute;
@@ -421,6 +511,9 @@ header{
   border: none;
   font-size: 24px;
   display:none;
+}
+main{
+  padding-top: 100px;
 }
 
 footer{
@@ -457,10 +550,11 @@ footer{
   header{
     flex-direction:column;
     align-items: flex-start;
+    background-color: #f2e2c4d2;
   }
-  .navbar__menu{
+  /* .navbar__menu{
     display: none;
-  }
+  } */
   .navbar__toggle-btn{
     display: block;
   }
@@ -471,14 +565,29 @@ footer{
   display:none;
   }
   .navbar__menu.open{
-  display:block;
+    
+    display:flex;
 
   }
   #footer{
     display:none;
   }
 
+<<<<<<< HEAD
   
+=======
+  /* about page */
+  #about{
+    /* box-shadow: none; */
+    margin: 10px;
+  }
+  #about > img{
+    width:90%;
+  }
+  .sub-img1, .sub-img2{
+    display:none;
+  }
+>>>>>>> mm--about
 }
 
 body {
