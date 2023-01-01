@@ -10,7 +10,7 @@
 <body>
     <header>
         <header>
-            <img src="images/logo1.png" alt="logo" class="logo">
+            <img src="images/trans-logo.png" alt="logo" class="logo">
             <ul class="navbar__menu">
                 <li class="navbar__menu__item"><a href="about.html">About</a></li>
                 <li class="navbar__menu__item"><a href="contact/contact.html">Contact</a></li>
@@ -28,9 +28,9 @@
             <p>Search our Inventory</p>
         <!-- top search/filter -->
             <section class="top-search">
-                <form>
+                <form method="get">
                     <label for="make">Make</label>
-                    <input type="text" name="make" id="make">
+                    <input type="text" name="make" id="make" value="Ford" >
                     <label for="model">Model</label>
                     <input type="text" name="model" id="model">
                     <label for="year">Year</label>
@@ -38,8 +38,9 @@
                     <label for="color">Color</label>
                     <input type="text" name="color" id="color">
                     <label for="price">Price Range</label>
-                    <input type="range" name="price" min="50" max="500,000" value="100,000" id="slider">
-                    <button type="submit">Search</button>
+                    <input type="range" name="price" min="50" max="500,000" value="100,000" id="slider" class="range-slider__range">
+                    <span class="range-slider__value">0</span>
+                    <button type="submit" id="topSearchBtn">Search</button>
                 </form>
             </section>
         </div>
@@ -47,9 +48,9 @@
             <!-- side bar filter -->
             <div class="filter">
                 <h3>Filter by:</h3>
-                <form>
-                    <label for="make">Make</label>
-                    <select>
+                <form method="get">
+                    <label for="fmake">Make</label>
+                    <select id="fmake">
                         <option value=" ">-- Choose Make --</option>
                         <option value="bmw">BMW</option>
                         <option value="cadillac">Cadillac</option>
@@ -62,64 +63,39 @@
                         <option value="rolls-royce">Rolls Royce</option>
                         <option value="volkswagon">Volkswagon</option>
                     </select>
-                    <label for="year">Year</label>
-                    <input type="number" name="year" id="year">
-                    <label for="color">Color</label>
-                    <input type="text" name="color" id="color">
+                    <label for="fyear">Year</label>
+                    <input type="number" name="year" id="fyear">
+                    
+                    <p>Color</p>
+                   
+                    <span><input type="checkbox" name="color" id="blue" value="blue">
+                    <label for="blue">Blue</label></span>
+             
+                    <span><input type="checkbox" name="color" id="black" value="black">
+                    <label for="black">Black</label></span>
+                 
+                    <span><input type="checkbox" name="color" id="orange" value="orange">
+                    <label for="orange">Orange</label></span>
+
+                    <span><input type="checkbox" name="color" id="red" value="red">
+                    <label for="red">Red</label></span>
+                    
+                    <span><input type="checkbox" name="color" id="silver" value="silver">
+                    <label for="silver">Silver</label></span>
+                    
+                    <span><input type="checkbox" name="color" id="white" value="white">
+                    <label for="white">White</label></span>
+                    
                     <label for="price">Price Range</label>
                     <input type="range" name="price" min="50" max="500,000" value="100,000" id="slider">
-                    <button type="submit">Search</button>
+                    <output for="price" onforminput="value = price.valueAsNumber"></output>
+                    <button type="submit" id="filterBtn">Filter</button>
                 </form>
             </div>
             <!-- all the cars will show up here using javascript and a json file -->
             <div class="inventory-grid">
                 
-                <section class="inv-item">
-                    <img class="inv-image" src="/images/1949-Rolls-Royce-Dawn-Drophead.jpg" alt="Rolls Royce Image">
-                    <h4 class="car-name">1949 Rolls Royce Dawn Drophead</h4> 
-                    <p class="color"></p>
-                    <p class="buy-price"></p>
-                    <p class="rent-price"></p>
-                    <p class="details"></p>
-                </section>
-                <section class="inv-item">
-                    <img class="inv-image" src="/images/1949-Rolls-Royce-Dawn-Drophead.jpg" alt="Rolls Royce Image">
-                    <h4 class="car-name">1949 Rolls Royce Dawn Drophead</h4> 
-                    <p class="color"></p>
-                    <p class="buy-price"></p>
-                    <p class="rent-price"></p>
-                    <p class="details"></p>
-                </section> <section class="inv-item">
-                    <img class="inv-image" src="/images/1949-Rolls-Royce-Dawn-Drophead.jpg" alt="Rolls Royce Image">
-                    <h4 class="car-name">1949 Rolls Royce Dawn Drophead</h4> 
-                    <p class="color"></p>
-                    <p class="buy-price"></p>
-                    <p class="rent-price"></p>
-                    <p class="details"></p>
-                </section> <section class="inv-item">
-                    <img class="inv-image" src="/images/1949-Rolls-Royce-Dawn-Drophead.jpg" alt="Rolls Royce Image">
-                    <h4 class="car-name">1949 Rolls Royce Dawn Drophead</h4> 
-                    <p class="color"></p>
-                    <p class="buy-price"></p>
-                    <p class="rent-price"></p>
-                    <p class="details"></p>
-                </section>
-                <section class="inv-item">
-                    <img class="inv-image" src="/images/1949-Rolls-Royce-Dawn-Drophead.jpg" alt="Rolls Royce Image">
-                    <h4 class="car-name">1949 Rolls Royce Dawn Drophead</h4> 
-                    <p class="color"></p>
-                    <p class="buy-price"></p>
-                    <p class="rent-price"></p>
-                    <p class="details"></p>
-                </section>
-                <section class="inv-item">
-                    <img class="inv-image" src="/images/1949-Rolls-Royce-Dawn-Drophead.jpg" alt="Rolls Royce Image">
-                    <h4 class="car-name">1949 Rolls Royce Dawn Drophead</h4> 
-                    <p class="color"></p>
-                    <p class="buy-price"></p>
-                    <p class="rent-price"></p>
-                    <p class="details"></p>
-                </section>
+                <!-- cars are input here through javascript in inventory.js -->
             </div>
         </div>
     </main>

@@ -23,6 +23,32 @@ span, a, p, label {
     font-family: var(--body-font);
 }
 
+/* ----------- NAVIGATION -------------- */
+
+header{
+    flex-direction:column;
+    align-items: flex-start;
+  }
+  .navbar__menu{
+    display: none;
+  }
+  .navbar__toggle-btn{
+    display: block;
+  }
+  .navbar__menu{
+  flex-direction: column;
+  text-align:center;
+  width: 100%;
+  display:none;
+  }
+  .navbar__menu.open{
+  display:block;
+
+  }
+  #footer{
+    display:none;
+  }
+
 /* -------------------- HOME PAGE --------------------- */
 
 .home-logo {
@@ -196,9 +222,7 @@ span, a, p, label {
    color: #73221A;
    font-size: 3em;
  }
-  @media only screen and (max-width: 550px) {
-   
-  }
+
 
 
 /* -------------- INVENTORY PAGE ---------------- */
@@ -235,10 +259,35 @@ header {
     max-width: 100%;
 }
 
-#inv-page input {
+#inv-page input, select {
     padding: .5em;
-    border: 2px solid var(--cream);
+    border: 1px solid var(--gray);
     border-radius: 4px;
+
+}
+
+#inv-page .range-slider__range {
+    height: 10px;
+    border-radius: 5px;
+    background: var(--gray);
+    outline: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.range-slider__range::--webkit-slider-thumb {
+    -webkit-appearance: none;
+            appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--main-red);
+    cursor: pointer;
+}
+
+label{
+    margin-top: 1em;
 }
 
 /* ---------------------- Media Queries -------------------- */
@@ -250,26 +299,41 @@ header {
        }
 
     .inv-body {
-        display: grid;
-        grid-template-columns: 25% 75%;
+        /* display: grid;
+        grid-template-columns: 25% 75%; */
+        display: flex;
+        flex-direction: row;
     }
 
     .inv-hero, .top-search {
         grid-column: 1/3;
     }
 
+    .filter {
+        width: 25%;
+        margin-left: 2em;
+    }
+
+    .filter form {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding-right: 2em;
+        border-right: 1px solid #401410;
+    }
+
     .inventory-grid {
-        width: 100%;
-        height: 85%;
+        /* width: 100%;
+        height: 85%; */
+        width: 75%;
+        height: 25%;
         overflow-y: auto;
         display: grid;
         grid-template-columns: repeat(3, 33%);
     }
 }
 
-@media only screen and (max-width: 770px) {
- 
-}
+
 
 
 
@@ -277,90 +341,68 @@ header {
   box-sizing: border-box;
 }
 
-header{
-  position: relative;
-  width:100%;
-  display: flex;
-  justify-content:space-between;
-  align-items:center;
-}
-.logo{
-  width: 100px;
-  margin: 8px;
-}
-.navbar__menu{
-  display:flex;
-  list-style:none;
-}
-.navbar__menu__item{
-  padding: 8px 12px;
-  margin: 0 4px;
-  cursor:pointer;
-  
-}
-.navbar__toggle-btn{
-  position: absolute;
-  right: 32px;
-  top: 24px;
-  background-color: transparent;
-  border: none;
-  font-size: 24px;
-  display:none;
-}
 
-footer{
-  margin: 32px;
-}
-#footer{
-  display: flex;
-  
-  justify-content: space-between;
-  border-bottom: 1px solid #D3D3D3;
-}
-.footer__item{
-  display:flex;
-  flex-direction: column;
-}
-.footer__item p{
-  margin-top: 0;
-  font-weight:600;
-}
-.footer__item a{
-  margin-bottom: 16px;
-  text-decoration :none;
-  color: black;
-}
-#store_hours{
-  padding: 12px;
-  width: 260px;
-}
-.rights{
-  margin-top: 50px;
-}
 
-@media screen and (max-width: 768px){
-  header{
-    flex-direction:column;
-    align-items: flex-start;
-  }
-  .navbar__menu{
-    display: none;
-  }
-  .navbar__toggle-btn{
-    display: block;
-  }
-  .navbar__menu{
-  flex-direction: column;
-  text-align:center;
-  width: 100%;
-  display:none;
-  }
-  .navbar__menu.open{
-  display:block;
-
-  }
-  #footer{
-    display:none;
-  }
+@media screen and (min-width: 768px){
+    header{
+        position: relative;
+        width:100%;
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+      }
+      .logo{
+        width: 100px;
+        margin: 8px;
+      }
+      .navbar__menu{
+        display:flex;
+        list-style:none;
+      }
+      .navbar__menu__item{
+        padding: 8px 12px;
+        margin: 0 4px;
+        cursor:pointer;
+        
+      }
+      .navbar__toggle-btn{
+        position: absolute;
+        right: 32px;
+        top: 24px;
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
+        display:none;
+      }
+      
+      footer{
+        margin: 32px;
+      }
+      #footer{
+        display: flex;
+        
+        justify-content: space-between;
+        border-bottom: 1px solid #D3D3D3;
+      }
+      .footer__item{
+        display:flex;
+        flex-direction: column;
+      }
+      .footer__item p{
+        margin-top: 0;
+        font-weight:600;
+      }
+      .footer__item a{
+        margin-bottom: 16px;
+        text-decoration :none;
+        color: black;
+      }
+      #store_hours{
+        padding: 12px;
+        width: 260px;
+      }
+      .rights{
+        margin-top: 50px;
+      }
 }
 
