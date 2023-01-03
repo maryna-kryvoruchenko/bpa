@@ -1,24 +1,8 @@
-//image slider
-const slidesContainer = document.getElementById("slides-container");
-const slide = document.querySelector(".slide");
-const prevButton = document.getElementById("slide-arrow-prev");
-const nextButton = document.getElementById("slide-arrow-next");
-
-nextButton.addEventListener("click", () => {
-  const slideWidth = slide.clientWidth;
-  slidesContainer.scrollLeft += slideWidth;
-});
-
-prevButton.addEventListener("click", () => {
-  const slideWidth = slide.clientWidth;
-  slidesContainer.scrollLeft -= slideWidth;
-});
-
 //animated title
 if (document.getElementById("slider--text")) {
     let slides = [
         "<h1>Welcome to Old Bob's Classic Auto</h1>",
-        "<img class='home-logo' src='images/logo.png' alt='logo'>"
+        "<img class='home-logo' src='images/trans-logo.png' alt='logo'>"
     ];
 
     let i = 0;

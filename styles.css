@@ -28,119 +28,87 @@ span, a, p, label {
 .home-logo {
     height: 200px;
  }
- #home-selection {
-    font-family: 'Yeseva One', cursive;
-    text-align: center;
-    padding-top: 30px;
+ .container_h2, .container_list {
+  text-align: center;
+  list-style: none;
  }
- #slider-container {
-    background-color: #f2e2c4;
+#slider-text-container {
+  background: rgb(242,226,196);
+  background: linear-gradient(0deg, rgba(242,226,196,1) 0%, rgba(255,255,255,1) 90%);
+}
+.container_list {
+  padding-bottom: 20px;
+  font-family: 'Yeseva One', cursive;
+}
+.container_list li {
+  line-height: 25px;
+}
+ /* Newest Selection Styles */
+  /* Hover over cells */
+#home-selection {
+  font-family: 'Yeseva One', cursive;
+  text-align: center;
+  padding-top: 30px;
  }
- #slider--text {
-    display: flex;
-    justify-content: center;
-    height: 200px;
-    align-items: center;
-    font-family: 'Yeseva One', cursive;
-    color: #73221A;
+ .cell {
+  width: 33%;
+  height: 350px;
+  margin: 0 15px;
+  overflow: hidden;
+  border: 2px solid gray;
+  border-radius: 8px;
+  opacity: 1;
+}
+.cell img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  
+}
+ .caruosel_name {
+  color: black;
+  font-size: 1.2em;
+  text-align: center;
+  transition: .5s ease;
+  backface-visibility: hidden;
  }
- 
- .fade-in {
-    animation: fade 4s infinite;
- }
- 
- @keyframes fade {
-    0% {
-        opacity: 0;
-        transform: rotate3d(2, 2, 0, 48deg);
-    }
-    20% {
-        opacity: 1;
-        transform: rotate3d(0, 0, 0, 24deg);
-    }
-    80% {
-        opacity: 1;
-        transform: rotate3d(0, 0, 0, 24deg);
-    }
-    100% {
-        opacity: 0;
-        transform: rotate3d(-2, -2, 0, 48deg);
-    }
- }
-  .slider-wrapper {
-    margin: 1rem auto;
-    position: relative;
-    overflow: hidden;
-    max-width: 60%;
-  }
-  
-  .slides-container {
-    width: 100%;
-    display: flex;
-    overflow: scroll;
-    scroll-behavior: smooth;
-    list-style: none;
-    margin: 0 auto;
-    padding: 0;
-  }
-  
-  .slide-arrow {
-    position: absolute;
-    display: flex;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    height: 4rem;
-    background-color: white;
-    border: none;
-    width: 2rem;
-    font-size: 3rem;
-    padding: 0;
-    cursor: pointer;
-    opacity: 0.5;
-    transition: opacity 100ms;
-  }
-  
-  .slide-arrow:hover,
-  .slide-arrow:focus {
-    opacity: 1;
-  }
-  
-  #slide-arrow-prev {
-    left: 0;
-    padding-left: 0.25rem;
-    border-radius: 0 2rem 2rem 0;
-  }
-  
-  #slide-arrow-next {
-    right: 0;
-    padding-left: 0.75rem;
-    border-radius: 2rem 0 0 2rem;
-  }
-  
-  .slide {
-    width: 100%;
-    height: 100%;
-    flex: 1 0 100%;
-  }
-  /* Test */
-  /* .slide:nth-child(1) {
-    background-color: #49b293;
-  }
-  
-  .slide:nth-child(2) {
-    background-color: #b03532;
-  }
-  
-  .slide:nth-child(3) {
-    background-color: #6a478f;
-    margin: 0;
-  }
-  
-  .slide:nth-child(4) {
-    background-color: #da6f2b;
-  } */
-  #testContainer {
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.cell:hover img {
+  opacity: 0.3;
+}
+
+.cell:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #73221A;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.text_link {
+  text-decoration: none;
+  color: white;
+}
+
+.text_link:visited {
+  color: white;
+}
+
+ #testContainer {
    position: relative;
    width: 100%;
    max-width: 350px;
@@ -176,6 +144,7 @@ span, a, p, label {
  }
  #joinAuction {
    background-color: #f2e2c4;
+   margin-top: 60px;
  }
  #auction-title {
     font-family: 'Yeseva One', cursive;
@@ -196,9 +165,6 @@ span, a, p, label {
    color: #73221A;
    font-size: 3em;
  }
-  @media only screen and (max-width: 550px) {
-   
-  }
 /* ABOUT PAGE */
 #about{
   
@@ -265,6 +231,7 @@ span, a, p, label {
   color: #304751;
   font-weight: bold;
 }
+
 
 /* -------------- INVENTORY PAGE ---------------- */
 /* header img {
@@ -503,6 +470,7 @@ header.navbar--dark{
   padding: 8px 12px;
   margin: 0 4px;
   cursor:pointer;
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   color: var(--main-red);
   border-radius:4px;
