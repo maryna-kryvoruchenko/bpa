@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="home.css">
     <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="icon" type="image/x-icon" href="images/homeLogo.png">
     <script src="https://kit.fontawesome.com/67ea2a523c.js" crossorigin="anonymous"></script>
     <title>Old Bob's Classic Auto</title>
 </head>
 <body>
   <header>
-        <img src="images/homeLogo.png" alt="logo" class="logo">
+        <img src="images/trans-logo.png" alt="logo" class="logo">
         <ul class="navbar__menu">
             <li class="navbar__menu__item">About</li>
             <li class="navbar__menu__item">Contact</li>
@@ -27,37 +29,58 @@
     <main>
         <div id="slider-text-container">
             <div id="slider--text"></div>
+            <h2 class="container_h2">Why Bob's Auto?</h2>
+            <ul class="container_list">
+                <li>Great Quality Cars</li>
+                <li>Affordable</li>
+                <li>Variety of styles and models</li>
+            </ul>
         </div>
         <h1 id="home-selection">Newest Selection</h3>
-        <section class="slider-wrapper">
-            <div class="slide-container">
-                <div class="slide fading">
-                 <img src='images/1949-Rolls-Royce-Dawn-Drophead.jpg' alt='1949 Rolls Royce'>
-               </div>
-               <div class="slide fading">
-                 <img src='images/1957-chevrolet-bel-air.jpg' alt='1957 chevrolet bel air'>
-               </div>
-               <div class="slide fading">
-                 <img src='images/1961-Jaguar-E-type.jpg' alt='1961 Jaguar E'>
-               </div>
-               <div class="slide fading">
-                 <img src='images/1963-galaxie-black.jpg' alt='1963 Galaxie Black'>
-               </div>
-               <div class="slide fading">
-                <img src='images/1968-benz.jpg' alt='1968 Benz'>
-               </div>
-         
-               <a href="#" class="prev" title="Previous">&#10094</a>
-               <a href="#" class="next" title="Next">&#10095</a>
-             </div>
-             <div class="dots-container">
-               <span class="dot"></span>
-               <span class="dot"></span>
-               <span class="dot"></span>
-               <span class="dot"></span>
-               <span class="dot"></span>
-             </div>
-          </section>
+            <div class="main-carousel">
+                <div class="cell">
+                    <img src="images/1949-Rolls-Royce-Dawn-Drophead.jpg" alt="car">
+                    <h4 class="caruosel_name">Rolls Royce Dawn Drophead</h4>
+                    <div class="middle">
+                        <div class="text"><a class="text_link" href="#">View More</a></div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="images/1961-Jaguar-E-type.jpg" alt="car">
+                    <h4 class="caruosel_name">Jaguar E Type</h4>
+                    <div class="middle">
+                        <div class="text"><a class="text_link" href="#">View More</a></div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="images/1957-chevrolet-bel-air.jpg" alt="car">
+                    <h4 class="caruosel_name">Chebrolet Bel Air</h4>
+                    <div class="middle">
+                        <div class="text"><a class="text_link" href="#">View More</a></div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="images/1967-cadillac-white.jpg" alt="car">
+                    <h4 class="caruosel_name">Cadillac</h4>
+                    <div class="middle">
+                        <div class="text"><a class="text_link" href="#">View More</a></div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="images/1970-Chevrolet-EI-Camino-SS.jpg" alt="car">
+                    <h4 class="caruosel_name">Chevrolet EI Camino SS</h4>
+                    <div class="middle">
+                        <div class="text"><a class="text_link" href="#">View More</a></div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <img src="images/1972-BMW-CSL.jpg" alt="car">
+                    <h4 class="caruosel_name">BMW CSL</h4>
+                    <div class="middle">
+                        <div class="text"><a class="text_link" href="#">View More</a></div>
+                    </div>
+                </div>
+              </div>
           <div id="joinAuction">
             <h1 id="auction-title">
                 Join the Auction!
@@ -88,10 +111,18 @@
           </div>
       </div>
       <div class="rights">
-          <p>&copy; 2022 Company name. All rights reserved (Include BPA somewhere?)</p>
+          <p>&copy; 2022 Old Bob's Auto Classic. All rights reserved (Include BPA somewhere?)</p>
       </div>
       
     </footer>
-    
-
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script type="text/javascript">
+            $('.main-carousel').flickity({
+            // options
+            cellAlign: 'left',
+            wrapAround:true,
+            freeScroll: true
+            });
+        </script>
+    </body>
 </html>
