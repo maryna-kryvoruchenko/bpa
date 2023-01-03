@@ -1,0 +1,229 @@
+{
+    "cars":[
+        {   
+            "id": 1,
+            "make": "Rolls Royce",
+            "model": "Dawn",
+            "year": 1949,
+            "color": "Navy Blue",
+            "buy": "150,000",
+            "rent": "1,650",
+            "image": "images/1949-rolls-royce-dawn-drophead.jpg",
+            "details": "Step back in time with this sleek 1949 Rolls Royce Dawn Drophead. It won't take long for the jaws to drop."
+
+        },
+        {
+            "id": 2,
+            "make":"Ford",
+            "model": "Thunderbird",
+            "year": 1955,
+            "color": "Light Blue",
+            "buy":"40,000",
+            "rent": "550",
+            "image":"images/1955-thunderbird-blue.jpg",
+            "details": "Doesn't this just take you back? Imagine yourself in this sweet 1955 baby blue Thunderbird. Did we mention it comes with the dice?"
+        },
+        {
+            "id": 3,
+            "make": "Ford",
+            "model": "GT",
+            "year": 1960,
+            "color":"Black",
+            "buy": "2,000,000",
+            "rent": "20,000",
+            "image": "images/1960-ford-gt.jpg",
+            "details": "This Ford GT might be over 60 years old, but it will give the young bucks down the road a run for their money."
+        },
+        {
+            "id": 4,
+            "make": "Jaguar",
+            "model": "E-Type",
+            "year": 1961,
+            "color": "Black",
+            "buy": "150,000",
+            "rent": "1,650",
+            "image": "images/1961-jaguar-e-type.jpg",
+            "details": "Let others drool over the purr of this 1961 Jaguar E-Type."
+        },
+        {
+            "id": 5,
+            "make": "Chevrolet",
+            "model": "Corvette",
+            "year": 1963,
+            "color": "Blue",
+            "buy": "75,000",
+            "rent": "900",
+            "image": "images/1963-chevrolet-corvette.jpg",
+            "details": "The Corvette has been a classic since the 1950s. Take this 1963 model and show them that it's still got it."
+        },
+        {
+            "id": 6,
+            "make": "Ford",
+            "model": "Galaxie 300",
+            "year": 1963,
+            "color": "Black",
+            "buy": "60,000",
+            "rent": "750",
+            "image": "images/1963-galaxie-black.jpg",
+            "details": "Nothing says 'Gentleman' like the 1963 Galaxie 300."
+        },
+        {
+            "id": 7,
+            "make": "Cadillac",
+            "model": "DeVille",
+            "year": 1967,
+            "color": "White",
+            "buy": "13,000",
+            "rent": "300",
+            "image": "images/1967-cadillac-White.jpg",
+            "details": "This one truly is a classic. Take this 2-seater Cadillac DeVille out for a spin and enjoy the smooth ride."
+        },
+        {
+            "id": 8,
+            "make": "Chevrolet",
+            "model": "El Camino",
+            "year": 1970,
+            "color": "Blue",
+            "buy": "25,000",
+            "rent": "400",
+            "image": "images/1970-chevrolet-ei-camino-ss.jpg",
+            "details": "You will no doubt get a true bang for your buck with the Chevrolet El Camino. Mixing the beloved station wagon with a truck-like bed behind the cab."
+        },
+        {
+            "id": 9,
+            "make": "BMW",
+            "model": "CSL",
+            "year": 1972,
+            "color": "Black",
+            "buy": "146,000",
+            "rent": "1,650",
+            "image": "images/1972-bmw-csl.jpg",
+            "details": "Steal the show with the BMW CSL and it's unique tail fins."
+        },
+        {
+            "id": 10,
+            "make": "Fiat",
+            "model": "500",
+            "year": 1972,
+            "color": "Red",
+            "buy": "28,000",
+            "rent": "450",
+            "image": "images/1972-fiat500-red.jpg",
+            "details": "With a vintage Fiat 500, you don't need to be driving European roads to feel like you're somewhere unique."
+        },
+        {
+            "id": 11,
+            "make": "BMW",
+            "model": "3 Series",
+            "year": 1982,
+            "color": "Red",
+            "buy": "15,000",
+            "rent": "300",
+            "image": "images/1982-bmw-3series-red.jpg",
+            "details": "Glide through traffic with this slick 1982 BMW 3 Series without having to worry about being cramped in this compact car."
+        },
+        {
+            "id": 12,
+            "make": "Jaguar",
+            "model": "XJS",
+            "year": 1989,
+            "color": "Black",
+            "buy": "21,000",
+            "rent": "400",
+            "image": "images/1989-jaguar-xjs.jpg",
+            "details": "Driving to the grocery store will be more than just a ride with in a sleek 1989 Jaguar XJS."
+        },
+        {
+            "id": 13,
+            "make": "Ford",
+            "model": "Mustang",
+            "year": 1967,
+            "color": "Red",
+            "buy": "25,000",
+            "rent": "400",
+            "image": "images/1967-ford-mustang.jpg",
+            "details": "It doesn't get any more classic than a Ford Mustang. Relive the old days with this 1967 model."
+        },
+        {
+            "id": 14,
+            "make": "Pontiac",
+            "model": "Firebird",
+            "year": 1979,
+            "color": "Steel Gray",
+            "buy": "19,000",
+            "rent": "350",
+            "image": "images/1979-pontiac-firebird.jpg",
+            "details": "Take to the roads and don't look back with this 1979 Pontiac Firebird."
+        },
+        {
+            "id": 15,
+            "make": "Volkswagon",
+            "model": "Beetle",
+            "year": 1970,
+            "color": "Blue",
+            "buy": "15,000",
+            "rent": "300",
+            "image": "images/1970-vw-beetle.jpg",
+            "details": "Punches will fly as you drive this iconic 1970 Volkswagen Bug."
+        },
+        {
+            "id": 16,
+            "make": "Jaguar",
+            "model": "E-Type",
+            "year": 1967,
+            "color": "White",
+            "buy": "102,000",
+            "rent": "1,200",
+            "image": "images/1967-jaguar-e-convert.jpg",
+            "details": "Let the wind blow through your hair with top down in this 1967 Jaguar E-Type."
+        }, 
+        {
+            "id": 17,
+            "make": "Volkswagon",
+            "model": "Beetle",
+            "year": 1972,
+            "color": "Orange",
+            "buy": "25,000",
+            "rent": "400",
+            "image": "images/1972-vw-beetle.jpg",
+            "details": "Hit the road with this freshly refurbished 1972 Volkswagen Bug."
+        }, 
+        {
+            "id": 18,
+            "make": "Chevrolet",
+            "model": "Bel Air",
+            "year": 1957,
+            "color": "Red",
+            "buy": "65,000",
+            "rent": "800",
+            "image": "images/1957-chevrolet-bel-air.jpg",
+            "details": "Ride low and slow with this vintage 1957 Chevy Bel Air."
+        },
+        {
+            "id": 19,
+            "make": "Mercedes-Benz",
+            "model": "E W114",
+            "year": 1968,
+            "color": "Brown",
+            "buy": "10,500",
+            "rent": "250",
+            "image": "images/1968-benz.jpg",
+            "details": "As classy now as they were 50 years ago, a night on the town with this Mercedes-Benz will surely catch some eyes."
+        },
+        {
+            "id": 20,
+            "make": "Volkswagon",
+            "model": "Transport",
+            "year": 1972,
+            "color": "Orange",
+            "buy": "37,000",
+            "rent": "550",
+            "image": "images/1972-vw-bus.jpg",
+            "details": "Relive your hippie days in this 1972 Volkswagen Bus."
+        }
+
+    ]
+    
+
+    
+}

@@ -10,18 +10,23 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="icon" type="image/x-icon" href="images/homeLogo.png">
+
+    <script src="header.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+
     <script src="https://kit.fontawesome.com/67ea2a523c.js" crossorigin="anonymous"></script>
     <title>Old Bob's Classic Auto</title>
 </head>
 <body>
-  <header>
-        <img src="images/trans-logo.png" alt="logo" class="logo">
-        <ul class="navbar__menu">
-            <li class="navbar__menu__item">About</li>
-            <li class="navbar__menu__item">Contact</li>
-            <li class="navbar__menu__item">Auctions</li>
-            <li class="navbar__menu__item">Inventory</li>
-        </ul>
+  <header id="header">
+        <a href="index.html" class="logo" ><img src="images/trans-logo.png" alt="logo" ></a>
+        <div class="navbar__menu">
+            <a class="navbar__menu__item" href="about.html">About</a>
+            <a class="navbar__menu__item" href="./contact/contact.html">Contact</a>
+            <a class="navbar__menu__item" href="auction.html">Auctions</a>
+            <a class="navbar__menu__item" href="inventory.html">Inventory</a>
+        </div>
+
         <button class="navbar__toggle-btn">
             <i class="fa-sharp fa-solid fa-bars"></i>
         </button>

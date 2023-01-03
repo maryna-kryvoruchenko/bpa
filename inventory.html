@@ -8,21 +8,23 @@
     <title>Inventory Page</title>
 </head>
 <body>
-    <header>
-        <!-- <img src="images/logo.png" alt="bob's auto logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="inventory.html">Inventory</a></li>
-                <li><a>Contact Us</a></li>
-            </ul>
-        </nav> -->
+    <header id="header">
+        <a href="index.html" class="logo" ><img src="images/logo_1.png" alt="logo" ></a>
+        <div class="navbar__menu">
+            <a class="navbar__menu__item" href="about.html">About</a>
+            <a class="navbar__menu__item" href="./contact/contact.html">Contact</a>
+            <a class="navbar__menu__item" href="auction.html">Auctions</a>
+            <a class="navbar__menu__item" href="inventory.html">Inventory</a>
+        </div>
+        <button class="navbar__toggle-btn">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+        </button>
     </header>
     <main id="inv-page">
         <div class="inv-hero">
             <h1>Inventory</h1>
             <p>Search our Inventory</p>
-        
+        <!-- top search/filter -->
             <section class="top-search">
                 <form>
                     <label for="make">Make</label>
@@ -40,21 +42,24 @@
             </section>
         </div>
         <div class="inv-body">
+            <!-- side bar filter -->
             <div class="filter">
                 <h3>Filter by:</h3>
                 <form>
                     <label for="make">Make</label>
-                        <input type="checkbox" >
+                    <select>
+                        <option value=" ">-- Choose Make --</option>
                         <option value="bmw">BMW</option>
                         <option value="cadillac">Cadillac</option>
                         <option value="chevrolet">Chevrolet</option>
                         <option value="fiat">Fiat</option>
                         <option value="ford">Ford</option>
                         <option value="jaguar">Jaguar</option>
+                        <option value="mercedes-benz">Mercedes-Benz</option>
+                        <option value="pontiac">Pontiac</option>
                         <option value="rolls-royce">Rolls Royce</option>
                         <option value="volkswagon">Volkswagon</option>
-                    <label for="model">Model</label>
-                    <input type="text" name="model" id="model">
+                    </select>
                     <label for="year">Year</label>
                     <input type="number" name="year" id="year">
                     <label for="color">Color</label>
@@ -64,7 +69,9 @@
                     <button type="submit">Search</button>
                 </form>
             </div>
+            <!-- all the cars will show up here using javascript and a json file -->
             <div class="inventory-grid">
+                
                 <section class="inv-item">
                     <img class="inv-image" src="/images/1949-Rolls-Royce-Dawn-Drophead.jpg" alt="Rolls Royce Image">
                     <h4 class="car-name">1949 Rolls Royce Dawn Drophead</h4> 
@@ -74,6 +81,20 @@
                     <p class="details"></p>
                 </section>
                 <section class="inv-item">
+                    <img class="inv-image" src="/images/1949-Rolls-Royce-Dawn-Drophead.jpg" alt="Rolls Royce Image">
+                    <h4 class="car-name">1949 Rolls Royce Dawn Drophead</h4> 
+                    <p class="color"></p>
+                    <p class="buy-price"></p>
+                    <p class="rent-price"></p>
+                    <p class="details"></p>
+                </section> <section class="inv-item">
+                    <img class="inv-image" src="/images/1949-Rolls-Royce-Dawn-Drophead.jpg" alt="Rolls Royce Image">
+                    <h4 class="car-name">1949 Rolls Royce Dawn Drophead</h4> 
+                    <p class="color"></p>
+                    <p class="buy-price"></p>
+                    <p class="rent-price"></p>
+                    <p class="details"></p>
+                </section> <section class="inv-item">
                     <img class="inv-image" src="/images/1949-Rolls-Royce-Dawn-Drophead.jpg" alt="Rolls Royce Image">
                     <h4 class="car-name">1949 Rolls Royce Dawn Drophead</h4> 
                     <p class="color"></p>
@@ -100,5 +121,28 @@
             </div>
         </div>
     </main>
+    <footer>
+        <div id="footer">
+            <div class="footer__logo">Company Logo<img src="" alt=""></div>
+            <div class="footer__item">
+                <p>Company</p>
+                <a href="">Contact Us</a>
+                <a href="">About</a>
+            </div>
+            <div class="footer__item">
+                <p>Quick Link</p>
+                <a href="">Pricing</a>
+            </div>
+            <div class="footer__item">
+                <p>Store Hours</p>
+                <input type="text" id="store_hours" placeholder="Show store hours">
+            </div>
+        </div>
+        <div class="rights">
+            <p>&copy; 2022 Company name. All rights reserved (Include BPA somewhere?)</p>
+        </div>
+        
+      </footer>
+      <script src="inventory.js"></script>
 </body>
 </html>
