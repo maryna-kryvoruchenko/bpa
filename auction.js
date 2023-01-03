@@ -1,23 +1,3 @@
-//animated title
-if (document.getElementById("slider--text")) {
-    let slides = [
-        "<h1>Welcome to Old Bob's Classic Auto</h1>",
-        "<img class='home-logo' src='images/trans-logo.png' alt='logo'>"
-    ];
-
-    let i = 0;
-
-    const slider = () => {
-        document.getElementById("slider--text").innerHTML = slides[i];
-        document.getElementById("slider--text").classList.add('fade-in');
-
-        (i < slides.length - 1) ? i++ : i = 0;
-    };
-
-    slider(); // Start slider immediately
-    setInterval(slider, 4000); // Slide every 4 seconds
-}
-
 //Auction countdown
 // Set the date we're counting down to
 var countDownDate = new Date("Mar 15, 2023 15:30:00").getTime();
@@ -38,7 +18,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("auctionCount").innerHTML = days + "d " + hours + "h "
+  document.querySelector("#auctionCount").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
     
   // If the count down is over, write some text 
@@ -52,5 +32,3 @@ var x = setInterval(function() {
 // navbarToggleBtn.addEventListener('click', () =>{
 //     navbarMenu.classList.toggle('open');
 // } )
-
-
