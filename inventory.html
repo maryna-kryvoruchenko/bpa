@@ -38,10 +38,10 @@
                     <label for="color">Color</label>
                     <input type="text" name="color" id="color">
                     <label for="price">Price Range</label>
-                    <input type="range" name="price" min="50" max="500,000" value="100,000" id="slider" class="range-slider__range">
+                    <input type="range" name="price" min="50" max="500,000" value="100,000" id="price" class="range-slider__range">
                     <span class="range-slider__value">0</span>
-                    <button type="submit" id="topSearchBtn">Search</button>
                 </form>
+                <button type="submit" id="topSearchBtn">Search</button>
             </section>
         </div>
         <div class="inv-body">
@@ -60,7 +60,7 @@
                         <option value="jaguar">Jaguar</option>
                         <option value="mercedes-benz">Mercedes-Benz</option>
                         <option value="pontiac">Pontiac</option>
-                        <option value="rolls-royce">Rolls Royce</option>
+                        <option value="rolls royce">Rolls Royce</option>
                         <option value="volkswagon">Volkswagon</option>
                     </select>
                     <label for="fyear">Year</label>
@@ -86,11 +86,11 @@
                     <span><input type="checkbox" name="color" id="white" value="white">
                     <label for="white">White</label></span>
                     
-                    <label for="price">Price Range</label>
-                    <input type="range" name="price" min="50" max="500,000" value="100,000" id="slider">
+                    <label for="pslider">Price Range</label>
+                    <input type="range" name="price" min="50" max="500,000" value="100,000" id="pslider">
                     <output for="price" onforminput="value = price.valueAsNumber"></output>
-                    <button type="submit" id="filterBtn">Filter</button>
                 </form>
+                <button type="submit" id="filterBtn">Filter</button>
             </div>
             <!-- all the cars will show up here using javascript and a json file -->
             <div class="inventory-grid">
@@ -121,6 +121,6 @@
         </div>
         
       </footer>
-      <script src="inventory.js"></script>
+      <script src="inventory.js" type="module"></script>
 </body>
 </html>
