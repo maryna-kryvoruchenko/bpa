@@ -8,18 +8,19 @@
     <title>Auctions</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="auction.js"></script>
+    <script src="header.js" defer></script>
 
 </head>
-
 <body>
     <header>
         <a href="index.html" class="logo" ><img src="images/logo_1.png" alt="logo" ></a>
-        <ul class="navbar__menu">
-            <li class="navbar__menu__item">About</li>
-            <li class="navbar__menu__item">Contact</li>
-            <li class="navbar__menu__item">Auctions</li>
-            <li class="navbar__menu__item">Inventory</li>
-        </ul>
+        <div class="navbar__menu">
+            <a class="navbar__menu__item" href="index.html" data-link="Home"></a>
+            <a class="navbar__menu__item" href="about.html" data-link="About"></a>
+            <a class="navbar__menu__item" href="./contact/contact.html" data-link="Contact"></a>
+            <a class="navbar__menu__item" href="auction.html" data-link="Auctions"></a>
+            <a class="navbar__menu__item" href="inventory.html"data-link="Inventory"></a>
+        </div>
         <button class="navbar__toggle-btn">
             <i class="fa-sharp fa-solid fa-bars"></i>
         </button>

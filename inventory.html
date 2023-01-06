@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="header.js" defer></script>
     <title>Inventory Page</title>
 </head>
 <body>
@@ -12,10 +13,11 @@
     <header id="header">
         <a href="index.html" class="logo" ><img src="images/trans-logo.png" alt="logo" ></a>
         <div class="navbar__menu">
-            <a class="navbar__menu__item" href="about.html">About</a>
-            <a class="navbar__menu__item" href="./contact/contact.html">Contact</a>
-            <a class="navbar__menu__item" href="auction.html">Auctions</a>
-            <a class="navbar__menu__item" href="inventory.html">Inventory</a>
+            <a class="navbar__menu__item" href="index.html" data-link="Home"></a>
+            <a class="navbar__menu__item" href="about.html" data-link="About"></a>
+            <a class="navbar__menu__item" href="./contact/contact.html" data-link="Contact"></a>
+            <a class="navbar__menu__item" href="auction.html" data-link="Auctions"></a>
+            <a class="navbar__menu__item" href="inventory.html"data-link="Inventory"></a>
         </div>
         <button class="navbar__toggle-btn">
             <i class="fa-sharp fa-solid fa-bars"></i>
