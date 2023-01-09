@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Inventory Page</title>
+    <script src="header.js" defer></script>
+    <script src="https://kit.fontawesome.com/67ea2a523c.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -29,17 +31,27 @@
         <!-- top search/filter -->
             <section class="top-search">
                 <form method="get">
-                    <label for="make">Make</label>
-                    <input type="text" name="make" id="make" value="Ford" >
-                    <label for="model">Model</label>
-                    <input type="text" name="model" id="model">
-                    <label for="year">Year</label>
-                    <input type="number" name="year" id="year">
-                    <label for="color">Color</label>
-                    <input type="text" name="color" id="color">
-                    <label for="price">Price Range</label>
-                    <input type="range" name="price" min="50" max="500,000" value="100,000" id="price" class="range-slider__range">
-                    <span class="range-slider__value">0</span>
+                    <div>
+                        <label for="make">Make</label>
+                        <input type="text" name="make" id="make" placeholder="Ford" >
+                    </div>
+                    <div>
+                        <label for="model">Model</label>
+                        <input type="text" name="model" id="model" placeholder="Galaxie">
+                    </div>
+                    <div>
+                        <label for="year">Year</label>
+                        <input type="number" name="year" id="year" placeholder="1963">
+                    </div>
+                    <div>
+                        <label for="color">Color</label>
+                        <input type="text" name="color" id="color" placeholder="Black">
+                    </div>
+                    <!-- <div>
+                        <label for="price">Price Range</label>
+                        <input type="range" name="price" min="50" max="500,000" value="100,000" id="price" class="range-slider__range">
+                        <span class="range-slider__value">0</span>
+                    </div> -->
                 </form>
                 <button type="submit" id="topSearchBtn">Search</button>
             </section>
