@@ -53,6 +53,7 @@ function displayInvItem(car){
 
 function searchBy(cars){
     //clearing template for newly searched inventory items
+
     let template = '';
     document.querySelector('.inventory-grid').innerHTML = template;
     //getting user input 
@@ -60,19 +61,83 @@ function searchBy(cars){
     let inpModel = document.querySelector('#model').value.toLowerCase();
     let inpColor = document.querySelector('#color').value.toLowerCase();
     let inpYear = document.querySelector('#year').value;
-    let inpPrice = document.querySelector('#price').value;
-
+    console.log(inpYear);
     //filtering through json to find matches to the user input and setting to new array
-    if (inpMake.length != 0 && inpModel.length == 0 && inpColor.length == 0){
-        // let outputArray = cars.filter(car=> car.make.includes(inpMake));
+    // just make input
+    if (inpMake.length != 0 && inpModel.length == 0 && inpColor.length == 0 && inpYear.length == 0){
         let outputArray = cars.filter(car=> new RegExp(inpMake).test(car.make.toLowerCase()));
+
         outputArray.forEach(displayInvItem);
-    } else if (inpMake.length != 0 || inpModel.length != 0){
-        let outputArray = cars.filter(car=> new RegExp(inpMake).test(car.make.toLowerCase()) && new RegExp(inpModel).test(car.model.toLowerCase()));
+    } 
+    //just model
+    else if(inpModel.length != 0 && inpMake.length == 0 && inpColor.length == 0 && inpYear.length == 0){
+        let outputArray = cars.filter(car=>new RegExp(inpModel).test(car.model.toLowerCase()));
+
+        outputArray.forEach(displayInvItem);  
+    }
+    // just color
+    else if (inpColor.length != 0 && inpModel.length == 0 && inpMake.length == 0 && inpYear.length == 0){
+        let outputArray = cars.filter(car=>new RegExp(inpColor).test(car.color.toLowerCase()));
+
+        outputArray.forEach(displayInvItem);
+    }
+    //just year
+    else if(inpYear.length != 0 && inpMake.length == 0 && inpModel.length == 0 && inpColor.length == 0 ){
+        let outputArray = cars.filter(car=>new RegExp(inpYear).test(car.year));
+
+        outputArray.forEach(displayInvItem);
+    }
+
+    // make and model filled out
+    else if (inpMake.length != 0 && inpModel.length != 0){
+        let outputArray = cars.filter(car=> new RegExp(inpMake).test(car.make.toLowerCase()) 
+        && new RegExp(inpModel).test(car.model.toLowerCase()));
+
+        outputArray.forEach(displayInvItem);  
+    } 
+
+    // make model and color filled out
+    else if (inpMake.length != 0 && inpModel.length != 0 && inpColor.length != 0){
+        let outputArray = cars.filter(car=> new RegExp(inpMake).test(car.make.toLowerCase()) 
+        && new RegExp(inpModel).test(car.model.toLowerCase()) 
+        && new RegExp(inpColor).test(car.color.toLowerCase()));
+
         outputArray.forEach(displayInvItem);    
-    } else if (inpMake.length != 0 || inpModel.length != 0 || inpColor.length != 0){
-        let outputArray = cars.filter(car=> new RegExp(inpMake).test(car.make.toLowerCase()) && new RegExp(inpModel).test(car.model.toLowerCase()) && new RegExp(inpColor).test(car.color.toLowerCase()));
+    } 
+    // make model color and year filled out
+    else if (inpMake.length != 0 && inpModel.length != 0 && inpColor.length != 0 && inpYear.length != 0){
+        let outputArray = cars.filter(car=> new RegExp(inpMake).test(car.make.toLowerCase()) 
+        && new RegExp(inpModel).test(car.model.toLowerCase()) 
+        && new RegExp(inpColor).test(car.color.toLowerCase()) 
+        && new RegExp(inpYear).test(car.year));
+
         outputArray.forEach(displayInvItem);    
+    } 
+
+    // make and color
+    else if(inpMake.length != 0 && inpColor.length != 0){
+        let outputArray = cars.filter(car=> new RegExp(inpMake).test(car.make.toLowerCase()) 
+        && new RegExp(inpColor).test(car.color.toLowerCase()));
+
+        outputArray.forEach(displayInvItem);   
+    }
+    // model and color 
+    else if (inpModel.length != 0 && inpColor.length != 0){
+        let outputArray = cars.filter(car=> new RegExp(inpModel).test(car.model.toLowerCase()) 
+        && new RegExp(inpColor).test(car.color.toLowerCase()));
+
+        outputArray.forEach(displayInvItem);    
+    }
+    // year and color
+    else if (inpColor.length != 0 && inpYear.length != 0){
+        let outputArray = cars.filter(car=> new RegExp(inpColor).test(car.color.toLowerCase()) 
+        && new RegExp(inpYear).test(car.year));
+
+        outputArray.forEach(displayInvItem);    
+    }
+    // nothing at all just gives the whole inventory
+    else if (inpMake.length == 0 && inpModel.length == 0 && inpColor.length == 0 && inpYear.length == 0){  
+        cars.forEach(displayInvItem);
     }
 
 
