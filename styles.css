@@ -424,13 +424,6 @@ header {
     }
 }
 
-
-/* @media only screen and (min-width: 770px) {
- 
-} */
-
-
-
 *{
   box-sizing: border-box;
 }
@@ -532,9 +525,6 @@ footer{
     align-items: flex-start;
     background-color: #f2e2c4d2;
   }
-  /* .navbar__menu{
-    display: none;
-  } */
   .navbar__toggle-btn{
     display: block;
   }
@@ -564,8 +554,4 @@ footer{
   .sub-img1, .sub-img2{
     display:none;
   }
-}
-
-body {
-  background-color: #8c8074;
 }
