@@ -75,7 +75,7 @@
             "color": "White",
             "buy": "13,000",
             "rent": "300",
-            "image": "images/1967-cadillac-White.jpg",
+            "image": "images/1967-cadillac-white.jpg",
             "details": "This one truly is a classic. Take this 2-seater Cadillac DeVille out for a spin and enjoy the smooth ride."
         },
         {
@@ -141,7 +141,7 @@
             "color": "Red",
             "buy": "25,000",
             "rent": "400",
-            "image": "images/1967-ford-mustang.jpg",
+            "image": "images/cropped-1967-ford-mustang.jpg",
             "details": "It doesn't get any more classic than a Ford Mustang. Relive the old days with this 1967 model."
         },
         {
@@ -163,7 +163,7 @@
             "color": "Blue",
             "buy": "15,000",
             "rent": "300",
-            "image": "images/1970-vw-beetle.jpg",
+            "image": "images/cropped-1970-vw-beetle.jpg",
             "details": "Punches will fly as you drive this iconic 1970 Volkswagen Bug."
         },
         {
@@ -218,7 +218,7 @@
             "color": "Orange",
             "buy": "37,000",
             "rent": "550",
-            "image": "images/1972-vw-bus.jpg",
+            "image": "images/cropped-1972-vw-bus.jpg",
             "details": "Relive your hippie days in this 1972 Volkswagen Bus."
         }
 
