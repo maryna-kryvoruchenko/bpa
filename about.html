@@ -15,67 +15,127 @@
     <header id="header">
         <a href="index.html" class="logo" ><img src="images/logo_1.png" alt="logo"></a>
         <div class="navbar__menu">
-            <a class="navbar__menu__item" href="index.html">Home</a>
-            <a class="navbar__menu__item" href="about.html">About</a>
-            <a class="navbar__menu__item" href="./contact/contact.html">Contact</a>
-            <a class="navbar__menu__item" href="auction.html">Auctions</a>
-            <a class="navbar__menu__item" href="inventory.html">Inventory</a>
+            <a class="navbar__menu__item" href="index.html" data-link="Home"></a>
+            <a class="navbar__menu__item" href="about.html" data-link="About"></a>
+            <a class="navbar__menu__item" href="contact.html" data-link="Contact"></a>
+            <a class="navbar__menu__item" href="auction.html" data-link="Auctions"></a>
+            <a class="navbar__menu__item" href="inventory.html"data-link="Inventory"></a>
         </div>
-        <button class="navbar__toggle-btn">
-            <i class="fa-sharp fa-solid fa-bars"></i>
-        </button>
+        <div class="navbar__toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
     </header>
     <main>
         <div id="about">
             <img src="images/members.jpg"> 
             <!--  -->
             <h1>About Us</h1>
-            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? 
             </p>
             <div class ="about__item">
                 <div class="sub-img1">
-                    <img src="http://placeimg.com/300/300/nature" alt="">
+                    <img src="images/1972-fiat500-red.jpg" alt="">
                 </div>
-                <div>
+                <div class="sub-text1">
                     <h2>Who We Are</h2>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis. </p>
                 </div>
             </div>
             <div class ="about__item">
-                <div>
+                <div class="sub-text2">
                     <h2>Why choose us</h2>
-                    <p>NLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>NLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
                 <div class="sub-img2">
-                    <img src="http://placeimg.com/300/300/nature" alt="">
+                    <img src="images/1989-Jaguar-XJS.jpg" alt="">
+                </div>
+            </div>
+            <h2>Our People</h2>
+            <div class="members">
+                <div class="card">
+                    <img src="images/member0.jpg">
+                    <div class="content">
+                        <h2>Maryna Kryvoruchenko<span>Developer</span></h2>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque qui, labore laboriosam reiciendis et unde.
+                      </p>
+                    <div class="sns">
+                        <a href="#none"><i class="fa fa-facebook"></i></a>
+                        <a href="#none"><i class="fa fa-twitter"></i></a>
+                        <a href="#none"><i class="fa fa-instagram"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/member1.jpg">
+                    <div class="content">
+                        <h2>Tim Orgill <span>Developer</span></h2>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque qui, labore laboriosam reiciendis et unde.
+                        </p>
+                        <div class="sns">
+                        <a href="#none"><i class="fa fa-facebook"></i></a>
+                        <a href="#none"><i class="fa fa-twitter"></i></a>
+                        <a href="#none"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/member2.jpg">
+                    <div class="content">
+                        <h2>Kaylene Ellinger<span>Developer</span></h2>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque qui, labore laboriosam reiciendis et unde.
+                        </p>
+                        <div class="sns">
+                        <a href="#none"><i class="fa fa-facebook"></i></a>
+                        <a href="#none"><i class="fa fa-twitter"></i></a>
+                        <a href="#none"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/member3.jpg">
+                    <div class="content">
+                        <h2>Moon Moon<span>Developer</span></h2>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque qui, labore laboriosam reiciendis et unde.
+                        </p>
+                        <div class="sns">
+                        <a href="#none"><i class="fa fa-facebook"></i></a>
+                        <a href="#none"><i class="fa fa-twitter"></i></a>
+                        <a href="#none"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         
     </main>
     <footer>
-        <div id="footer">
-            <div class="footer__logo"><img src="images/trans-logo.png" alt="company logo"></div>
-            <div class="bpa_footer__logo"><img src="images/BPA_logo_fullcolor_only_bpa.jpg" alt="bpa logo"></div>
-            <div class="footer__item">
-                <p>Company</p>
-                <a href="contact/contact.html">Contact Us</a>
-                <a href="about.html">About</a>
-            </div>
-            <div class="footer__item">
-                <p>Quick Link</p>
-                <a href="inventory.html">Pricing</a>
-            </div>
-            <div class="footer__item">
-                <p>Store Hours</p>
-                <p class="store_hours">Monday-Friday: 9am-6pm <br> Saturday: 9am-1pm <br> Sunday: Closed</p>
-            </div>
-        </div>
-        <div class="rights">
-            <p>&copy; 2022 Old Bob's Auto Classic. All rights reserved</p>
-        </div>
-        
-      </footer>
-    
+      <div id="footer">
+          <div class="footer__logo">Company Logo<img src="" alt=""></div>
+          <div class="footer__item">
+              <p>Company</p>
+              <a href="">Contact Us</a>
+              <a href="">About</a>
+          </div>
+          <div class="footer__item">
+              <p>Quick Link</p>
+              <a href="">Pricing</a>
+          </div>
+          <div class="footer__item">
+              <p>Store Hours</p>
+              <input type="text" id="store_hours" placeholder="Show store hours">
+          </div>
+      </div>
+      <div class="rights">
+          <p>&copy; 2022 Company name. All rights reserved (Include BPA somewhere?)</p>
+      </div>
+      
+    </footer>
+</body>
 
 </html>
