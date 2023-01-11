@@ -8,7 +8,7 @@
             "color": "Navy Blue",
             "buy": "150,000",
             "rent": "1,650",
-            "image": "images/1949-rolls-royce-dawn-drophead.jpg",
+            "image": "images/1949-Rolls-Royce-Dawn-Drophead.jpg",
             "details": "Step back in time with this sleek 1949 Rolls Royce Dawn Drophead. It won't take long for the jaws to drop."
 
         },
@@ -42,7 +42,7 @@
             "color": "Black",
             "buy": "150,000",
             "rent": "1,650",
-            "image": "images/1961-jaguar-e-type.jpg",
+            "image": "images/1961-Jaguar-E-type.jpg",
             "details": "Let others drool over the purr of this 1961 Jaguar E-Type."
         },
         {
@@ -53,7 +53,7 @@
             "color": "Blue",
             "buy": "75,000",
             "rent": "900",
-            "image": "images/1963-chevrolet-corvette.jpg",
+            "image": "images/1963-Chevrolet-Corvette.jpg",
             "details": "The Corvette has been a classic since the 1950s. Take this 1963 model and show them that it's still got it."
         },
         {
@@ -97,7 +97,7 @@
             "color": "Black",
             "buy": "146,000",
             "rent": "1,650",
-            "image": "images/1972-bmw-csl.jpg",
+            "image": "images/1972-BMW-CSL.jpg",
             "details": "Steal the show with the BMW CSL and it's unique tail fins."
         },
         {
@@ -130,7 +130,7 @@
             "color": "Black",
             "buy": "21,000",
             "rent": "400",
-            "image": "images/1989-jaguar-xjs.jpg",
+            "image": "images/1989-Jaguar-XJS.jpg",
             "details": "Driving to the grocery store will be more than just a ride with in a sleek 1989 Jaguar XJS."
         },
         {
