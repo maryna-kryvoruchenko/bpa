@@ -110,6 +110,47 @@ span, a, p, label {
   color: white;
 }
 
+.test_and_loan {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 425px;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.loan_estimate {
+  border: 2px solid #73221A;
+  border-radius: 5px;
+  width: 350px;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.loan_estimate input {
+  margin: 0 auto;
+}
+
+.monthly_pay {
+  font-size: 1.2em;
+}
+
+#submit {
+  background-color: #73221A;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+  padding: 8px;
+  margin: 0 auto;
+}
+
+#submit:hover {
+  background-color: #401410;
+}
+
  #testContainer {
    position: relative;
    width: 100%;
@@ -120,10 +161,13 @@ span, a, p, label {
  
  #testContainer img {
    width: 100%;
-   height: auto;
+   height: 425px;
    opacity: 0.5;
  }
- 
+ #testContainer .btn a {
+  text-decoration: none;
+  color: white;
+ }
  #testContainer .btn {
    position: absolute;
    left: 50%;
@@ -140,7 +184,7 @@ span, a, p, label {
    text-align: center;
    font-family: 'Poppins', sans-serif;
  }
- 
+
  #testContainer .btn:hover {
    background-color: #401410;
  }
@@ -551,16 +595,6 @@ label{
       margin-right: 10px;
     }
 }
-
-
-
-/* @media only screen and (min-width: 770px) {
- 
-} */
-
-
-
-
 *{
   box-sizing: border-box;
 }
@@ -648,6 +682,12 @@ footer{
   text-decoration :none;
   color: black;
 }
+.footer__logo img {
+  width: 100px;
+}
+.bpa_footer__logo img {
+  width: 100px;
+}
 #store_hours{
   padding: 12px;
   width: 260px;
@@ -662,7 +702,6 @@ footer{
     align-items: flex-start;
     background-color: #f2e2c4d2;
   }
-  
   .navbar__toggle-btn{
     display: block;
   }
@@ -694,7 +733,3 @@ footer{
   }
 
 }
-
-/* body {
-  background-color: #8c8074;
-} */

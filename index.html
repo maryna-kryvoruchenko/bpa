@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="icon" type="image/x-icon" href="images/homeLogo.png">
-
+    <script defer src="loan.js"></script>
     <script src="header.js" defer></script>
     <link rel="icon" type="image/x-icon" href="images/logo.png">
 
@@ -21,6 +21,7 @@
   <header id="header">
         <a href="index.html" class="logo" ><img src="images/trans-logo.png" alt="logo" ></a>
         <div class="navbar__menu">
+            <a class="navbar__menu__item" href="index.html">Home</a>
             <a class="navbar__menu__item" href="about.html">About</a>
             <a class="navbar__menu__item" href="./contact/contact.html">Contact</a>
             <a class="navbar__menu__item" href="auction.html">Auctions</a>
@@ -35,11 +36,11 @@
         <div id="slider-text-container">
             <div id="slider--text"></div>
             <h2 class="container_h2">Why Bob's Auto?</h2>
-            <ul class="container_list">
-                <li>Great Quality Cars</li>
-                <li>Affordable</li>
-                <li>Variety of styles and models</li>
-            </ul>
+            <p class="container_list">
+                Great Quality Cars <br>
+                Affordable <br>
+                Variety of styles and models
+            </p>
         </div>
         <h1 id="home-selection">Newest Selection</h3>
             <div class="main-carousel">
@@ -93,30 +94,50 @@
             <h3 id="auctionAnnouncement">The next auction is in...</h3>
             <div id="auctionCount"></div>
           </div>
-          <div id="testContainer">
-            <img class="testDriveImg" src="images/testDrive.jpg" alt="car picture">
-            <button class="btn">Test Drive</button> 
+          <div class="test_and_loan">
+            <div id="testContainer">
+                <img class="testDriveImg" src="images/testDrive.jpg" alt="car picture">
+                <button class="btn"><a href="contact/contact.html">Test Drive</a></button> 
+              </div>
+              <div class="loan_estimate">
+                <h3>Loan Estimator:</h3>
+                <form name="calcLoan" onsubmit="computeLoan(); return false">
+                    <label for="amount">Loan Amount:</label>
+                    <input id="amount" type="number" name="amount" pattern="[1-9]" required>
+                    
+                    <label for="rate">Interest Rate:</label>
+                    <input id="rate" type="number" name="rate" pattern="[1-9]" required>
+                    
+                    <label for="months">Length of Term (in months):</label>
+                    <input id="months" type="number" name="rate" pattern="[1-9]" required>
+                    <br>
+                    <input id="submit" type="submit" value="Compute">
+        
+                    <h2 class="monthly_pay">Monthly Payment: <span id="total"></span></h2>
+                </form>
+              </div>
           </div>
     </main>
     <footer>
       <div id="footer">
-          <div class="footer__logo">Company Logo<img src="" alt=""></div>
+          <div class="footer__logo"><img src="images/trans-logo.png" alt="company logo"></div>
+          <div class="bpa_footer__logo"><img src="images/BPA_logo_fullcolor_only_bpa.jpg" alt="bpa logo"></div>
           <div class="footer__item">
               <p>Company</p>
-              <a href="">Contact Us</a>
-              <a href="">About</a>
+              <a href="contact/contact.html">Contact Us</a>
+              <a href="about.html">About</a>
           </div>
           <div class="footer__item">
               <p>Quick Link</p>
-              <a href="">Pricing</a>
+              <a href="inventory.html">Pricing</a>
           </div>
           <div class="footer__item">
               <p>Store Hours</p>
-              <input type="text" id="store_hours" placeholder="Show store hours">
+              <p class="store_hours">Monday-Friday: 9am-6pm <br> Saturday: 9am-1pm <br> Sunday: Closed</p>
           </div>
       </div>
       <div class="rights">
-          <p>&copy; 2022 Old Bob's Auto Classic. All rights reserved (Include BPA somewhere?)</p>
+          <p>&copy; 2022 Old Bob's Auto Classic. All rights reserved</p>
       </div>
       
     </footer>
