@@ -14,4 +14,12 @@ function computeLoan () {
     document.querySelector('#total').textContent = `$${total}`;
 }
 
+// Attribution: This validate() function was found on stackoverflow when searching for preventing negative inputs into form input field.
+function validate(event) {
+    if (event.key == "-") {
+        event.preventDefault();
+        return false;
+      }
+}
+
 document.querySelector('#submit').addEventListener('click', computeLoan);

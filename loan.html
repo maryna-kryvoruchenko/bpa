@@ -11,13 +11,13 @@
     <main>
         <form name="calcLoan" onsubmit="computeLoan(); return false">
             <label for="amount">Loan Amount:</label>
-            <input id="amount" type="number" name="amount" pattern="[1-9]" required>
+            <input id="amount" type="number" name="amount" pattern="[1-9]" min="0" onkeypress="validate(event)" required>
             <br>
             <label for="rate">Interest Rate:</label>
-            <input id="rate" type="number" name="rate" pattern="[1-9]" required>
+            <input id="rate" type="number" name="rate" pattern="[1-9]" min="0" onkeypress="validate(event)" required><span> %</span>
             <br>
             <label for="months">Length of Term (in months):</label>
-            <input id="months" type="number" name="rate" pattern="[1-9]" required>
+            <input id="months" type="number" name="rate" pattern="[1-9]" min="0" onkeypress="validate(event)" required>
             <br>
             <input id="submit" type="submit" value="Compute">
 
