@@ -37,17 +37,20 @@ filterBtn.addEventListener('click', function(){
     });
 });
 
+function limit (string = '', limit = 0) {  
+    return string.substring(0, limit)
+}
+
 function displayInvItem(car){
     // template for car display
-    let template = `<section class="inv-item">
+    let template = `<a href="#" class="car-link">
+    <section class="inv-item">
     <img class="inv-image" src="${car.image}" alt="${car.year} ${car.make} ${car.model}">
     <h4>${car.year} ${car.make} ${car.model}</h4>
-    <ul class="details">
-        <li>Color: ${car.color}</li>
-        <li>${car.details}</li>
-    </ul>
-    <p class="prices">Purchase Price: ${car.buy} <span> Rental Price: ${car.rent}</span></p>
-    </section>`
+    <p class="prices">Purchase Price: $${car.buy} <br><span> Rental Price: $${car.rent} / day</span></p>
+    <p>Color: ${car.color} <br> ${limit(car.details, 50)}...</p>
+    <p class="more">Click to see more details</p>
+    </section></a>`;
     document.querySelector('.inventory-grid').innerHTML += template;
 }
 
@@ -61,7 +64,7 @@ function searchBy(cars){
     let inpModel = document.querySelector('#model').value.toLowerCase();
     let inpColor = document.querySelector('#color').value.toLowerCase();
     let inpYear = document.querySelector('#year').value;
-    console.log(inpYear);
+    // console.log(inpYear);
     //filtering through json to find matches to the user input and setting to new array
     // just make input
     if (inpMake.length != 0 && inpModel.length == 0 && inpColor.length == 0 && inpYear.length == 0){
@@ -134,7 +137,23 @@ function searchBy(cars){
         && new RegExp(inpYear).test(car.year));
 
         outputArray.forEach(displayInvItem);    
+    } 
+    
+    // year and make
+    else if (inpMake.length != 0 && inpYear.length != 0){
+        let outputArray = cars.filter(car=> new RegExp(inpMake).test(car.make.toLowerCase()) 
+        && new RegExp(inpYear).test(car.year));
+
+        outputArray.forEach(displayInvItem); 
     }
+    //year and model
+    else if(inpModel.length != 0 && inpYear.length != 0 ){
+        let outputArray = cars.filter(car=> new RegExp(inpModel).test(car.model.toLowerCase()) 
+        && new RegExp(inpYear).test(car.year));
+
+        outputArray.forEach(displayInvItem);
+    }
+
     // nothing at all just gives the whole inventory
     else if (inpMake.length == 0 && inpModel.length == 0 && inpColor.length == 0 && inpYear.length == 0){  
         cars.forEach(displayInvItem);
