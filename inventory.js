@@ -43,14 +43,14 @@ function limit (string = '', limit = 0) {
 
 function displayInvItem(car){
     // template for car display
-    let template = `<a href="#" class="car-link">
+    let template = `<button href="#" class="car-link">
     <section class="inv-item">
     <img class="inv-image" src="${car.image}" alt="${car.year} ${car.make} ${car.model}">
     <h4>${car.year} ${car.make} ${car.model}</h4>
     <p class="prices">Purchase Price: $${car.buy} <br><span> Rental Price: $${car.rent} / day</span></p>
     <p>Color: ${car.color} <br> ${limit(car.details, 50)}...</p>
     <p class="more">Click to see more details</p>
-    </section></a>`;
+    </section></button>`;
     document.querySelector('.inventory-grid').innerHTML += template;
 }
 
