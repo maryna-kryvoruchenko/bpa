@@ -154,13 +154,10 @@ function searchBy(cars){
         outputArray.forEach(displayInvItem);
     }
 
-    // nothing at all just gives the whole inventory
+    // no input just gives the whole inventory
     else if (inpMake.length == 0 && inpModel.length == 0 && inpColor.length == 0 && inpYear.length == 0){  
         cars.forEach(displayInvItem);
     }
-
-
-    // displaying each item in array using the above function
     
 }
 
@@ -170,16 +167,7 @@ function filterBy(cars){
 
     let filMake = document.querySelector('#fmake').value;
     let filterArray = cars.filter(car=> car.make.toLowerCase() === filMake);
-    console.log(filMake);
     filterArray.forEach(displayInvItem);
+    
 }
 
-
-
-// document.getElementById('topSearchBtn').addEventListener('click', searchBy);
-
-
-
-
-// console.log(result);
-// displayInvItem(cars);

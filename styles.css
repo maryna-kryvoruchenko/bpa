@@ -586,6 +586,11 @@ header {
   border-radius: 12px;
 }
 
+.top-search input:focus {
+
+  border: 1px solid var(--main-red);
+}
+
 .top-search form label {
   text-align: left;
   display: block;
@@ -708,7 +713,7 @@ label{
 }
 
 .inv-item {
-  height: 30em;
+  /* height: 30em; */
   margin: .5em;
   border: 1px solid var(--gray);
   border-radius: 5px;
@@ -717,6 +722,9 @@ label{
 
 .inv-item h4, .inv-item p {
   margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 1em;
+
 }
 .more {
   text-align: center;
@@ -1043,6 +1051,10 @@ footer{
   .contact-info h2{
     text-align:center;
   }
+
+  .inv-item {
+    height: auto;
+  }
 }
 
 /* tablet view */
@@ -1053,7 +1065,7 @@ footer{
 
   .inv-body {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   .inv-hero{
     height: 20em;
@@ -1081,7 +1093,7 @@ footer{
   }
 
   .filter {
-      width: 25%;
+      /* width: 25%; */
       margin-left: 2em;
   }
 
@@ -1090,17 +1102,21 @@ footer{
       flex-direction: column;
       width: 80%;
       padding-right: 2em;
-      border-right: 1px solid #401410;
+      /* border-right: 1px solid #401410; */
   }
 
   .inventory-grid {
       /* width: 100%;
       height: 85%; */
-      width: 75%;
+      /* width: 75%; */
       height: 25%;
       overflow-y: auto;
       display: grid;
-      grid-template-columns: repeat(3, 33%);
+      grid-template-columns: repeat(2, 50%);
+  }
+
+  .inv-item {
+    height:34em;
   }
 
   #auction-content {
@@ -1210,7 +1226,31 @@ footer{
 
 /* Desktop and bigger view */
 @media (min-width: 900px){
-  
+  .inv-body {
+    display: flex;
+    flex-direction: row;
+  }
+  .inventory-grid {
+      /* width: 100%;
+      height: 85%; */
+      width: 75%;
+      height: 25%;
+      overflow-y: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 33%);
+  }
+
+  .inv-item {
+    height: 31em;
+  }
+
+  .filter {
+    width: 25%;
+  }
+
+  .filter form {
+    border-right: 1px solid #401410;
+  }
 }
 
 
