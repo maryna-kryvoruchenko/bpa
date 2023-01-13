@@ -1199,7 +1199,7 @@ footer{
     display:none;
   }
 
-  /* AUCTION PAGE */
+/* AUCTION PAGE */
   #auction-content {
     width: 375px;
     /* margin: 100px auto; */
@@ -1207,6 +1207,142 @@ footer{
 
   #auction-content p {
     text-align: center;
+}
+
+/* tablet view */
+@media screen and (min-width: 550px) {
+  .flickity-viewport {
+    height: 300px;
+  }
+  .cell {
+    height: 250px;
+  }
+  .cell img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  .members{
+    flex-flow:wrap;
+  }
+
+  /* --- contact --- */
+  #contact section{
+    flex-direction: column;
+  }
+  .message{
+    text-align:center;
+  }
+  .item{
+    width: 300px;
+  }
+  .item input{
+    width: 300px;
+  }
+  .message form textarea{
+    width: 300px;
+  }
+  .message form div, .message form textarea, .message form button{
+    margin: 8px auto;
+  }
+  .contact-info{
+    /* text-align:center; */
+    margin: auto;
+    padding:10px;
+  }
+  .contact-info h2{
+    text-align:center;
+  }
+
+  .inv-item {
+    height: auto;
+  }
+}
+
+/* tablet view */
+@media screen and (min-width: 550px){
+  /* - -------- nav bar --------- */
+  header{
+    flex-direction:column;
+    align-items: flex-start;
+    /* background-color: #f2e2c4d2; */
+  }
+  .navbar__toggle-btn{
+    display: block;
+    width: 25px;
+    height: 15px;
+    position:absolute;
+    top:26px;
+    right:15px;
+  }
+  .navbar__toggle-btn span{
+    background-color: var(--main-red);
+    height: 2px;
+    position:absolute;
+    width: 100%;
+    transition: 0.3s;
+  }
+  .navbar__toggle-btn span:nth-child(1){
+    top: 0;
+  }
+  .navbar__toggle-btn span:nth-child(2){
+    top:50%;
+  }
+  .navbar__toggle-btn span:nth-child(3){
+    top:100%;
+  }
+  .navbar__toggle-btn.active span:nth-child(1){
+    top: 50%;
+    transform:rotate(45deg);
+  }
+  .navbar__toggle-btn.active span:nth-child(2){
+    top:50%;
+    opacity: 0;
+  }
+
+  .navbar__toggle-btn.active span:nth-child(3){
+    top:50%;
+    transform: rotate(-45deg);
+  }
+  .navbar__menu{
+  flex-direction: column;
+  text-align:center;
+  width: 100%;
+  display:none;
+  }
+  .navbar__menu.open{
+    
+    display:flex;
+    align-items:center;
+    /* margin-bottom: 10px; */
+  }
+  .navbar__menu a{
+    margin-bottom:10px;
+  }
+
+  #slider--text {
+    height: 100px;
+  }
+  #auctionCount {
+    font-size: 2.5em;
+  }
+  .test_and_loan {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  #testContainer {
+    grid-row: 1;
+  }
+  .loan_estimate {
+    grid-row: 2;
+    margin: 0 auto;
+  }
+  .inv-body {
+    display: flex;
+    flex-direction: column;
+
   }
    
   #auctionCount {
@@ -1414,10 +1550,6 @@ footer{
     text-align: center;
   }
 
-  #auction-title {
-    text-align: center;
-  }
-
   #auction-content {
     /* width: 425px; */
     width: auto;
@@ -1501,6 +1633,85 @@ footer{
   .auction-row3 {
     grid-row: 3/4;
     /* margin-right: 10px; */
+  }
+
+  /* about */
+  #about{
+    margin: 10px auto;
+  }
+  #about > p {
+    margin:32px 12% 60px 12%; 
+  }
+  .about__item{
+    height:auto;
+    margin: 0 20%;
+  }
+  .sub-text1{
+    border-radius: 10px 10px 0 0;
+    
+  }
+  .sub-text2{
+    border-radius: 0 0 10px 10px;
+  }
+  .sub-text2 h2{
+    border-top: 1px solid #aaa;
+    margin-top: 16px;
+    padding-top:16px;
+  }
+  .sub-text2 p{
+    margin-bottom: 40px;
+  }
+  .sub-img1, .sub-img2{
+    display:none;
+  }
+  .members{
+    flex-flow:wrap;
+  }
+  /* --- contact --- */
+  #contact section{
+    flex-direction: column;
+  }
+  .message{
+    text-align:center;
+  }
+  .item{
+    width: 300px;
+  }
+  .item input{
+    width: 300px;
+  }
+  .message form textarea{
+    width: 300px;
+  }
+  .message form div, .message form textarea, .message form button{
+    margin: 8px auto;
+  }
+  .contact-info{
+    /* text-align:center; */
+    margin: auto;
+    padding:10px;
+  }
+  .contact-info h2{
+    text-align:center;
+  }
+
+  .inv-item {
+    height: auto;
+  }
+
+
+  /* ---------- footer ---------- */
+  .footer__logo{
+    display:none;
+  }
+  .bpa_footer__logo{
+    width: 80px;
+  }
+  .bpa_footer__logo img{
+    width: 100%;
+  }
+  #footer div p, #footer div a{
+    font-size: 14px;
   }
 
   /* about */
@@ -1731,7 +1942,6 @@ footer{
   .filter form {
     border-right: 1px solid #401410;
   }
-
   /* --------- about page --------- */
   #about{
     margin: 50px auto;
