@@ -1,7 +1,6 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Yeseva+One&display=swap');
+@import 'https://fonts.googleapis.com/css2?family=Poppins&family=Yeseva+One&display=swap';
 /* Fontawesome 4.7 */
-@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
 body {
     margin: 0;
     padding: 0;
@@ -614,25 +613,8 @@ header {
   color: var(--main-red);
 }
 
-
-#inv-page .range-slider__range {
-  height: 10px;
-  border-radius: 5px;
-  background: var(--gray);
-  outline: none;
-  padding: 0;
-  margin: 0;
-
-}
-
-.range-slider__range::--webkit-slider-thumb {
-  -webkit-appearance: none;
-          appearance: none;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: var(--main-red);
-  cursor: pointer;
+.carId {
+  display: none;
 }
 
 label{
@@ -710,6 +692,10 @@ label{
 .car-link {
   text-decoration: none;
   color: black;
+  background-color: white;
+  border: none;
+  text-align: left;
+  font-size: 1em;
 }
 
 .inv-item {
@@ -726,22 +712,24 @@ label{
   margin-bottom: 1em;
 
 }
-.more {
+#more {
   text-align: center;
   color: #401410;
+  text-decoration: underline;
+  margin-top: 1.6em;
 }
 
-.more:hover {
+#more:hover {
   color: var(--gray);
   cursor: pointer;
 }
 
 .inv-item:hover {
+  cursor: pointer;
   box-shadow: 5px 10px 18px var(--gray);
   transition: 0.3s;
   transform: translate(0px, -5px);
 }
-
 
 
 
@@ -1468,15 +1456,15 @@ footer{
   .inventory-grid {
       /* width: 100%;
       height: 85%; */
-      width: 75%;
+      width: 100%;
       height: 25%;
       overflow-y: auto;
       display: grid;
-      grid-template-columns: repeat(3, 33%);
+      grid-template-columns: repeat(3, 1fr);
   }
 
   .inv-item {
-    height: 31em;
+    height: 38em;
   }
 
   .filter {
@@ -1829,5 +1817,3 @@ footer{
     font-size: 16px;
   }
 }
-
-
