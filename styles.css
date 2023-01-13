@@ -113,7 +113,7 @@ span, a, p, label {
 .test_and_loan {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 425px;
+  /* height: 425px; */
   max-width: 80%;
   margin: 0 auto;
   margin-bottom: 50px;
@@ -130,6 +130,10 @@ span, a, p, label {
 
 .loan_estimate input {
   margin: 0 auto;
+}
+
+#amount, #rate, #months {
+  margin-bottom: 20px;
 }
 
 .monthly_pay {
@@ -659,6 +663,31 @@ footer{
     display:none;
   }
 
+  /* home page */
+  #slider--text h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .cell {
+    width: 100%;
+  }
+  #auctionCount{
+    font-size: 2em;
+  }
+  .test_and_loan {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 1fr;
+    margin: 20px;
+    padding: 0;
+  }
+  #testContainer {
+    grid-row: 1;
+  }
+  .loan_estimate {
+    grid-row: 2;
+  }
+
   /* about page */
   #about{
     /* box-shadow: none; */
@@ -670,15 +699,40 @@ footer{
   .sub-img1, .sub-img2{
     display:none;
   }
-
 }
 
 /* tablet view */
 @media screen and (min-width: 550px) {
+  .flickity-viewport {
+    height: 300px;
+  }
+  .cell {
+    height: 250px;
+  }
+  .cell img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
   #slider--text {
     height: 100px;
   }
-
+  #auctionCount {
+    font-size: 2.5em;
+  }
+  .test_and_loan {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  #testContainer {
+    grid-row: 1;
+  }
+  .loan_estimate {
+    grid-row: 2;
+    margin: 0 auto;
+  }
   .inv-body {
     display: flex;
     flex-direction: row;
@@ -805,7 +859,34 @@ footer{
 
 /* Desktop and bigger view */
 @media screen and (min-width: 900px){
-
+  .flickity-viewport {
+    height: 300px;
+  }
+  .cell {
+    height: 400px;
+  }
+  .cell img {
+    width: 100%;
+    height: 300px;
+  }
+  .test_and_loan {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+  #testContainer {
+    grid-column: 2;
+    grid-row: 1;
+    width: max-content;
+    margin: 0;
+    padding: 0;
+  }
+  .loan_estimate {
+    grid-column: 3;
+    grid-row: 1;
+  }
 }
-
-
