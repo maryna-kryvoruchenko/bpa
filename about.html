@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="main.js" defer></script>
+    <script src="chat.js" defer></script>
     <script src="header.js" defer></script>
     <link rel="icon" type="image/x-icon" href="images/logo.png">
     <script src="https://kit.fontawesome.com/67ea2a523c.js" crossorigin="anonymous"></script>
@@ -57,7 +58,7 @@
                 <div class="card">
                     <img src="images/member0.jpg">
                     <div class="content">
-                        <h2>Maryna Kryvoruchenko<span>Developer</span></h2>
+                        <h2>Maryna Kryvoruchenko<span>Sales Consultant</span></h2>
                         <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque qui, labore laboriosam reiciendis et unde.
                       </p>
@@ -71,7 +72,7 @@
                 <div class="card">
                     <img src="images/member1.jpg">
                     <div class="content">
-                        <h2>Tim Orgill <span>Developer</span></h2>
+                        <h2>Tim Orgill <span>Lot Attendant</span></h2>
                         <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque qui, labore laboriosam reiciendis et unde.
                         </p>
@@ -85,7 +86,7 @@
                 <div class="card">
                     <img src="images/member2.jpg">
                     <div class="content">
-                        <h2>Kaylene Ellinger<span>Developer</span></h2>
+                        <h2>Kaylene Ellinger<span>Customer Service Representative</span></h2>
                         <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque qui, labore laboriosam reiciendis et unde.
                         </p>
@@ -99,7 +100,7 @@
                 <div class="card">
                     <img src="images/member3.jpg">
                     <div class="content">
-                        <h2>Moon Moon<span>Developer</span></h2>
+                        <h2>Moon Moon<span>The General Manager</span></h2>
                         <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque qui, labore laboriosam reiciendis et unde.
                         </p>
@@ -112,7 +113,26 @@
                 </div>
             </div>
         </div>
-        
+        <div class="chat-popup">
+            <section class="chat-container">
+                <button type="button" class="chat-btn close" onclick="closeChat()">X</button>
+              <h1>Quick Links</h1>
+          
+              <h3>How can we help? Select from the options below...</h3>
+
+              <!-- Various options for chat box -->
+              <div class="chat-options-container">
+                <div class="chat-option" onclick="window.location.href='inventory.html'">Buy/Rent</div>
+                <div class="chat-option" onclick="window.location.href='index.html'">Secure Loan</div>
+                <div class="chat-option" onclick="window.location.href='index.html'">Test Drive</div>
+                <div class="chat-option" onclick="window.location.href='auction.html'">Join Auction</div>
+                <div class="chat-option" onclick="window.location.href='contact/contact.html'">Questions?</div>
+                <div class="chat-option" onclick="window.location.href='contact/contact.html'">Auction Volunteer</div>
+                <div class="chat-option" onclick="window.location.href='about.html'">Meet the Team</div>
+              </div>
+            </section>
+        </div>
+        <button class="open-button" onclick="openChat()"><i class='fas fa-bolt'></i></button>
     </main>
     <footer>
         <div id="footer">
