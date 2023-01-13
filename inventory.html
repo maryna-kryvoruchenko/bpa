@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Inventory Page</title>
     <script src="header.js" defer></script>
+    <script src="chat.js" defer></script>
     <script src="https://kit.fontawesome.com/67ea2a523c.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -111,6 +112,26 @@
                 <!-- cars are input here through javascript in inventory.js -->
             </div>
         </div>
+        <div class="chat-popup">
+            <section class="chat-container">
+                <button type="button" class="chat-btn close" onclick="closeChat()">X</button>
+              <h1>Quick Links</h1>
+          
+              <h3>How can we help? Select from the options below...</h3>
+
+              <!-- Various options for chat box -->
+              <div class="chat-options-container">
+                <div class="chat-option" onclick="window.location.href='inventory.html'">Buy/Rent</div>
+                <div class="chat-option" onclick="window.location.href='index.html'">Secure Loan</div>
+                <div class="chat-option" onclick="window.location.href='index.html'">Test Drive</div>
+                <div class="chat-option" onclick="window.location.href='auction.html'">Join Auction</div>
+                <div class="chat-option" onclick="window.location.href='contact/contact.html'">Questions?</div>
+                <div class="chat-option" onclick="window.location.href='contact/contact.html'">Auction Volunteer</div>
+                <div class="chat-option" onclick="window.location.href='about.html'">Meet the Team</div>
+              </div>
+            </section>
+        </div>
+        <button class="open-button" onclick="openChat()"><i class='fas fa-bolt'></i></button>
     </main>
     <footer>
         <div id="footer">
