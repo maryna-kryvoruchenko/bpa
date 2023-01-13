@@ -19,19 +19,20 @@
     <title>Old Bob's Classic Auto</title>
 </head>
 <body>
-  <header id="header">
-        <a href="index.html" class="logo" ><img src="images/trans-logo.png" alt="logo" ></a>
+    <header id="header">
+        <a href="index.html" class="logo" ><img src="images/logo_1.png" alt="logo"></a>
         <div class="navbar__menu">
-            <a class="navbar__menu__item" href="index.html">Home</a>
-            <a class="navbar__menu__item" href="about.html">About</a>
-            <a class="navbar__menu__item" href="./contact/contact.html">Contact</a>
-            <a class="navbar__menu__item" href="auction.html">Auctions</a>
-            <a class="navbar__menu__item" href="inventory.html">Inventory</a>
+            <a class="navbar__menu__item" href="index.html" data-link="Home"></a>
+            <a class="navbar__menu__item" href="about.html" data-link="About"></a>
+            <a class="navbar__menu__item" href="contact.html" data-link="Contact"></a>
+            <a class="navbar__menu__item" href="auction.html" data-link="Auctions"></a>
+            <a class="navbar__menu__item" href="inventory.html"data-link="Inventory"></a>
         </div>
-
-        <button class="navbar__toggle-btn">
-            <i class="fa-sharp fa-solid fa-bars"></i>
-        </button>
+        <div class="navbar__toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
     </header>
     <main>
         <div id="slider-text-container">
@@ -49,42 +50,42 @@
                     <img src="images/1949-Rolls-Royce-Dawn-Drophead.jpg" alt="car">
                     <h4 class="caruosel_name">Rolls Royce Dawn Drophead</h4>
                     <div class="middle">
-                        <div class="text"><a class="text_link" href="#">View More</a></div>
+                        <div class="text"><a class="text_link" href="inventory.html">View More</a></div>
                     </div>
                 </div>
                 <div class="cell">
                     <img src="images/1961-Jaguar-E-type.jpg" alt="car">
                     <h4 class="caruosel_name">Jaguar E Type</h4>
                     <div class="middle">
-                        <div class="text"><a class="text_link" href="#">View More</a></div>
+                        <div class="text"><a class="text_link" href="inventory.html">View More</a></div>
                     </div>
                 </div>
                 <div class="cell">
                     <img src="images/1957-chevrolet-bel-air.jpg" alt="car">
-                    <h4 class="caruosel_name">Chebrolet Bel Air</h4>
+                    <h4 class="caruosel_name">Chevrolet Bel Air</h4>
                     <div class="middle">
-                        <div class="text"><a class="text_link" href="#">View More</a></div>
+                        <div class="text"><a class="text_link" href="inventory.html">View More</a></div>
                     </div>
                 </div>
                 <div class="cell">
                     <img src="images/1967-cadillac-white.jpg" alt="car">
-                    <h4 class="caruosel_name">Cadillac</h4>
+                    <h4 class="caruosel_name">Cadillac DeVille</h4>
                     <div class="middle">
-                        <div class="text"><a class="text_link" href="#">View More</a></div>
+                        <div class="text"><a class="text_link" href="inventory.html">View More</a></div>
                     </div>
                 </div>
                 <div class="cell">
                     <img src="images/1970-Chevrolet-EI-Camino-SS.jpg" alt="car">
                     <h4 class="caruosel_name">Chevrolet EI Camino SS</h4>
                     <div class="middle">
-                        <div class="text"><a class="text_link" href="#">View More</a></div>
+                        <div class="text"><a class="text_link" href="inventory.html">View More</a></div>
                     </div>
                 </div>
                 <div class="cell">
                     <img src="images/1972-BMW-CSL.jpg" alt="car">
                     <h4 class="caruosel_name">BMW CSL</h4>
                     <div class="middle">
-                        <div class="text"><a class="text_link" href="#">View More</a></div>
+                        <div class="text"><a class="text_link" href="inventory.html">View More</a></div>
                     </div>
                 </div>
               </div>
@@ -98,7 +99,7 @@
           <div class="test_and_loan">
             <div id="testContainer">
                 <img class="testDriveImg" src="images/testDrive.jpg" alt="car picture">
-                <button class="btn"><a href="contact/contact.html">Test Drive</a></button> 
+                <button class="btn"><a href="contact.html">Test Drive</a></button> 
               </div>
               <div class="loan_estimate">
                 <h3>Loan Estimator:</h3>
