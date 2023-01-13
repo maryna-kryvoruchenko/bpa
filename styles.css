@@ -897,7 +897,7 @@ header.navbar--dark{
   display:none;
 } */
 main{
-  padding-top: 83px;
+  padding-top: 80px;
 }
 
 footer{
@@ -963,7 +963,7 @@ footer{
   header{
     flex-direction:column;
     align-items: flex-start;
-    background-color: #f2e2c4d2;
+    /* background-color: #f2e2c4d2; */
   }
   .navbar__toggle-btn{
     display: block;
@@ -1146,7 +1146,7 @@ footer{
   header{
     flex-direction:column;
     align-items: flex-start;
-    background-color: #f2e2c4d2;
+    /* background-color: #f2e2c4d2; */
   }
   .navbar__toggle-btn{
     display: block;
