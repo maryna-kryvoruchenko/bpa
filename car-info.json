@@ -23,19 +23,9 @@
             "image":"images/1955-thunderbird-blue.jpg",
             "details": "Doesn't this just take you back? Imagine yourself in this sweet 1955 baby blue Thunderbird. Did we mention it comes with the dice?"
         },
+
         {
             "id": 3,
-            "make": "Ford",
-            "model": "GT",
-            "year": 1960,
-            "color":"Black",
-            "buy": "2,000,000",
-            "rent": "20,000",
-            "image": "images/1960-ford-gt.jpg",
-            "details": "This Ford GT might be over 60 years old, but it will give the young bucks down the road a run for their money."
-        },
-        {
-            "id": 4,
             "make": "Jaguar",
             "model": "E-Type",
             "year": 1961,
@@ -46,15 +36,26 @@
             "details": "Let others drool over the purr of this 1961 Jaguar E-Type."
         },
         {
+            "id": 4,
+            "make": "Ford",
+            "model": "GT",
+            "year": 1960,
+            "color":"Black",
+            "buy": "2,000,000",
+            "rent": "20,000",
+            "image": "images/1960-ford-gt.jpg",
+            "details": "This Ford GT might be over 60 years old, but it will give the young bucks down the road a run for their money."
+        },
+        {
             "id": 5,
-            "make": "Chevrolet",
-            "model": "Corvette",
-            "year": 1963,
-            "color": "Blue",
-            "buy": "75,000",
-            "rent": "900",
-            "image": "images/1963-Chevrolet-Corvette.jpg",
-            "details": "The Corvette has been a classic since the 1950s. Take this 1963 model and show them that it's still got it."
+            "make": "Jaguar",
+            "model": "E-Type",
+            "year": 1967,
+            "color": "White",
+            "buy": "102,000",
+            "rent": "1,200",
+            "image": "images/1967-jaguar-e-convert.jpg",
+            "details": "Let the wind blow through your hair with top down in this 1967 Jaguar E-Type."
         },
         {
             "id": 6,
@@ -75,7 +76,7 @@
             "color": "White",
             "buy": "13,000",
             "rent": "300",
-            "image": "images/1967-cadillac-White.jpg",
+            "image": "images/1967-cadillac-white.jpg",
             "details": "This one truly is a classic. Take this 2-seater Cadillac DeVille out for a spin and enjoy the smooth ride."
         },
         {
@@ -86,7 +87,7 @@
             "color": "Blue",
             "buy": "25,000",
             "rent": "400",
-            "image": "images/1970-chevrolet-el-camino-ss.jpg",
+            "image": "images/1970-Chevrolet-EI-Camino-SS.jpg",
             "details": "You will no doubt get a true bang for your buck with the Chevrolet El Camino. Mixing the beloved station wagon with a truck-like bed behind the cab."
         },
         {
@@ -141,7 +142,7 @@
             "color": "Red",
             "buy": "25,000",
             "rent": "400",
-            "image": "images/1967-ford-mustang.jpg",
+            "image": "images/cropped-1967-ford-mustang.jpg",
             "details": "It doesn't get any more classic than a Ford Mustang. Relive the old days with this 1967 model."
         },
         {
@@ -163,20 +164,20 @@
             "color": "Blue",
             "buy": "15,000",
             "rent": "300",
-            "image": "images/1970-vw-beetle.jpg",
+            "image": "images/cropped-1970-vw-beetle.jpg",
             "details": "Punches will fly as you drive this iconic 1970 Volkswagen Bug."
         },
         {
             "id": 16,
-            "make": "Jaguar",
-            "model": "E-Type",
-            "year": 1967,
-            "color": "White",
-            "buy": "102,000",
-            "rent": "1,200",
-            "image": "images/1967-jaguar-e-convert.jpg",
-            "details": "Let the wind blow through your hair with top down in this 1967 Jaguar E-Type."
-        }, 
+            "make": "Chevrolet",
+            "model": "Corvette",
+            "year": 1963,
+            "color": "Blue",
+            "buy": "75,000",
+            "rent": "900",
+            "image": "images/1963-Chevrolet-Corvette.jpg",
+            "details": "The Corvette has been a classic since the 1950s. Take this 1963 model and show them that it's still got it."
+        },
         {
             "id": 17,
             "make": "Volkswagon",
@@ -218,7 +219,7 @@
             "color": "Orange",
             "buy": "37,000",
             "rent": "550",
-            "image": "images/1972-vw-bus.jpg",
+            "image": "images/cropped-1972-vw-bus.jpg",
             "details": "Relive your hippie days in this 1972 Volkswagen Bus."
         }
 

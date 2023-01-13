@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auctions</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <script src="chat.js" defer></script>
+    <script src="header.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
     <script defer src="auction.js"></script>
-
+    <script src="https://kit.fontawesome.com/67ea2a523c.js" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Auctions</title>
 </head>
-
 <body>
-    <header>
-        <a href="index.html" class="logo" ><img src="images/logo_1.png" alt="logo" ></a>
-        <ul class="navbar__menu">
-            <a class="navbar__menu__item" href="index.html">Home</a>
-            <li class="navbar__menu__item">About</li>
-            <li class="navbar__menu__item">Contact</li>
-            <li class="navbar__menu__item">Auctions</li>
-            <li class="navbar__menu__item">Inventory</li>
-        </ul>
-        <button class="navbar__toggle-btn">
-            <i class="fa-sharp fa-solid fa-bars"></i>
-        </button>
+    <header id="header">
+        <a href="index.html" class="logo" ><img src="images/logo_1.png" alt="logo"></a>
+        <div class="navbar__menu">
+            <a class="navbar__menu__item" href="index.html" data-link="Home"></a>
+            <a class="navbar__menu__item" href="about.html" data-link="About"></a>
+            <a class="navbar__menu__item" href="contact.html" data-link="Contact"></a>
+            <a class="navbar__menu__item" href="auction.html" data-link="Auctions"></a>
+            <a class="navbar__menu__item" href="inventory.html"data-link="Inventory"></a>
+        </div>
+        <div class="navbar__toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
     </header>
     <main>
+        <!-- <h1 id="auction-title">Join the Auction!</h1> -->
         <div id="auction-content">
             <div class="auction-img auction-col1 auction-row1"><img src="images/1970-Chevrolet-EI-Camino-SS.jpg" alt="1970 Chevy El Camino"></div>
             <div class="auction-img auction-col1 auction-row2"><img src="images/1968-benz.jpg" alt="1968 Benz"></div>
             <div class="auction-img auction-col1 auction-row3"><img src="images/1955-thunderbird-blue.jpg" alt="1955 T-Bird"></div>
             <form>
+                <h1 id="auction-title">Join the Auction!</h1>
                 <h3 id="auctionAnnouncement">The next auction is in...</h3>
-                <div id="auctionCount"></div>
-                <h1>Join the Auction!</h1>
+                <div id="auctionCount" class="auction-countdown"></div>
                 <p>*Your name should match government issued ID and name as found on any vehicle titles</p>
                 <label for="fname">First Name*:</label>
                 <input id="fname" type="text" name="firstname" required>
@@ -42,9 +48,8 @@
                 <input id="lname" type="text" name="lastname" required>
 
                 <label for="phone">Phone*:</label>
-                <input id="phone" type="tel" name="phonenumber" placeholder="(555) 555-5555"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-
+                <input id="phone" type="tel" name="phonenumber" placeholder="(555) 555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                
                 <label for="email">Email (optional):</label>
                 <input id="email" type="email" name="email" placeholder="email@domain.com">
 
@@ -54,6 +59,26 @@
             <div class="auction-img auction-col2 auction-row2"><img src="images/1982-bmw-3series-red.jpg" alt="1982 BMW"></div>
             <div class="auction-img auction-col2 auction-row3"><img src="images/1967-cadillac-white.jpg" alt="1967 Cadillac"></div>
         </div>
+        <div class="chat-popup">
+            <section class="chat-container">
+                <button type="button" class="chat-btn close" onclick="closeChat()">X</button>
+              <h1>Quick Links</h1>
+          
+              <h3>How can we help? Select from the options below...</h3>
+
+              <!-- Various options for chat box -->
+              <div class="chat-options-container">
+                <div class="chat-option" onclick="window.location.href='inventory.html'">Buy/Rent</div>
+                <div class="chat-option" onclick="window.location.href='index.html'">Secure Loan</div>
+                <div class="chat-option" onclick="window.location.href='index.html'">Test Drive</div>
+                <div class="chat-option" onclick="window.location.href='auction.html'">Join Auction</div>
+                <div class="chat-option" onclick="window.location.href='contact/contact.html'">Questions?</div>
+                <div class="chat-option" onclick="window.location.href='contact/contact.html'">Auction Volunteer</div>
+                <div class="chat-option" onclick="window.location.href='about.html'">Meet the Team</div>
+              </div>
+            </section>
+        </div>
+        <button class="open-button" onclick="openChat()"><i class='fas fa-bolt'></i></button>
     </main>
     <footer>
         <div id="footer">
