@@ -212,7 +212,7 @@ span, a, p, label {
  }
  #auctionCount {
    text-align: center;
-   font-family: 'Poppins', sans-serif;
+   font-family: var(--body-font);
    color: #73221A;
    font-size: 3em;
  }
@@ -751,11 +751,8 @@ label{
 
 /* ---------------------- Auction Page -------------------- */
 
-
-
 #auction-content {
-  width: 425px;
-  margin: 100px auto;
+  margin: 25px auto;
 }
 
 #auction-content form {
@@ -778,25 +775,21 @@ label{
 
 #auction-content form label, #auction-content form input {
   display: block;
-  margin: 5px 126px;
+  font-family: var(--body-font);
 }
 
 #auction-submit {
   position: absolute; 
-  right: 0;
+  /* left: 5px; */
   margin: 10px;
   padding: 5px 10px;
   border-radius: 5pt;
-  font-size: 1em;
+  /* font-size: 1em; */
 }
 
 #auction-submit:hover {
   background-color: #73221A;
   color:#D3D3D3
-}
-
-.auction-img {
- display: none;
 }
 
 .auction-img img {
@@ -955,6 +948,123 @@ footer{
   margin-top: 50px;
 }
 
+/* ---------------------- Styling for Chat -------------------- */
+/* Button used to open the chat box - fixed at the bottom of the page */
+.open-button {
+  background-color: var(--main-red); 
+  color: white;
+  padding: 20px 15px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.6;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 65px;
+  font-family: Poppins; /* var(--body-font)*/
+  z-index: 10;
+  transition: .5s;
+}
+
+/* Add some hover effects to buttons */
+.open-button:hover {
+  opacity: 1;
+}
+
+.open-button:active {
+  opacity: .9
+}
+
+.fa-bolt {
+  font-size: x-large;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  opacity: 0;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  border: 1px solid var(--main-red); 
+  height: auto;
+  transition: .5s;
+  /* z-index: 11; */
+  border-bottom-right-radius: 10%;
+}
+
+/* Add styles to the chat container */
+.chat-container {
+  width: 300px;
+  padding: 10px;
+  background-color: var(--tan); 
+  border-bottom-right-radius: 10%;
+}
+
+.chat-container h1 {
+  font-size: larger;
+  margin-top: 0;
+}
+
+.chat-container h3 {
+  font-size: large;
+  font-family: var(--body-font);
+}
+
+.chat-container h4 {
+  font-size: medium;
+  font-family: var(--body-font); 
+}
+
+/* Add a red background color to the cancel button */
+.chat-container .close {
+  background-color: var(--tan);
+  color: red;
+  border: none;
+  display: block;
+  position: fixed;
+  right: 30px;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.close:hover {
+  font-size: large;
+}
+
+.close:active {
+  color: var(--tan);
+}
+
+.chat-options-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chat-option {
+  font-family: var(--body-font);
+  border: 1px solid var(--main-red);
+  display: inline;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5pt;
+  transition: .4s;
+}
+
+.chat-option:hover {
+  background-color: var(--gray);
+  color: var(--tan);
+  transform: scale(1.1);
+  font-size: medium;
+  cursor: pointer;
+  transition-timing-function: ease-in-out;
+}
+
+.chat-option:active {
+  background-color: var(--main-red);
+  opacity: .8;
+}
+
 /* ---------------------- Media Queries -------------------- */
 
 
@@ -1088,6 +1198,166 @@ footer{
   .sub-img1, .sub-img2{
     display:none;
   }
+
+/* AUCTION PAGE */
+  #auction-content {
+    width: 375px;
+    /* margin: 100px auto; */
+  }
+
+  #auction-content p {
+    text-align: center;
+}
+
+/* tablet view */
+@media screen and (min-width: 550px) {
+  .flickity-viewport {
+    height: 300px;
+  }
+  .cell {
+    height: 250px;
+  }
+  .cell img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  .members{
+    flex-flow:wrap;
+  }
+
+  /* --- contact --- */
+  #contact section{
+    flex-direction: column;
+  }
+  .message{
+    text-align:center;
+  }
+  .item{
+    width: 300px;
+  }
+  .item input{
+    width: 300px;
+  }
+  .message form textarea{
+    width: 300px;
+  }
+  .message form div, .message form textarea, .message form button{
+    margin: 8px auto;
+  }
+  .contact-info{
+    /* text-align:center; */
+    margin: auto;
+    padding:10px;
+  }
+  .contact-info h2{
+    text-align:center;
+  }
+
+  .inv-item {
+    height: auto;
+  }
+}
+
+/* tablet view */
+@media screen and (min-width: 550px){
+  /* - -------- nav bar --------- */
+  header{
+    flex-direction:column;
+    align-items: flex-start;
+    /* background-color: #f2e2c4d2; */
+  }
+  .navbar__toggle-btn{
+    display: block;
+    width: 25px;
+    height: 15px;
+    position:absolute;
+    top:26px;
+    right:15px;
+  }
+  .navbar__toggle-btn span{
+    background-color: var(--main-red);
+    height: 2px;
+    position:absolute;
+    width: 100%;
+    transition: 0.3s;
+  }
+  .navbar__toggle-btn span:nth-child(1){
+    top: 0;
+  }
+  .navbar__toggle-btn span:nth-child(2){
+    top:50%;
+  }
+  .navbar__toggle-btn span:nth-child(3){
+    top:100%;
+  }
+  .navbar__toggle-btn.active span:nth-child(1){
+    top: 50%;
+    transform:rotate(45deg);
+  }
+  .navbar__toggle-btn.active span:nth-child(2){
+    top:50%;
+    opacity: 0;
+  }
+
+  .navbar__toggle-btn.active span:nth-child(3){
+    top:50%;
+    transform: rotate(-45deg);
+  }
+  .navbar__menu{
+  flex-direction: column;
+  text-align:center;
+  width: 100%;
+  display:none;
+  }
+  .navbar__menu.open{
+    
+    display:flex;
+    align-items:center;
+    /* margin-bottom: 10px; */
+  }
+  .navbar__menu a{
+    margin-bottom:10px;
+  }
+
+  #slider--text {
+    height: 100px;
+  }
+  #auctionCount {
+    font-size: 2.5em;
+  }
+  .test_and_loan {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  #testContainer {
+    grid-row: 1;
+  }
+  .loan_estimate {
+    grid-row: 2;
+    margin: 0 auto;
+  }
+  .inv-body {
+    display: flex;
+    flex-direction: column;
+
+  }
+   
+  #auctionCount {
+    font-size: 2.5em;
+  }
+
+  .auction-img {
+    display: none;
+  }
+  
+  #auction-content form label, #auction-content form input {
+    margin: 5px 0 5px 15px;
+    
+  }
+
 }
 
 /* tablet view */
@@ -1276,15 +1546,20 @@ footer{
     height:34em;
   }
 
+  #auction-title {
+    text-align: center;
+  }
+
   #auction-content {
+    /* width: 425px; */
     width: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(3, 1fr);
     justify-items: center;
   }
 
-  #auction-content form label, input {
+  #auction-content form label, #auction-content form input {
     display: block;
     font-size: 1.25em;
     margin: 5px 0 10px 15px;
@@ -1296,6 +1571,33 @@ footer{
     margin: 5px 0 15px 15px;
   }
 
+  #auction-content form
+  {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    width: 415px;
+  }
+
+  #auction-content form #auction-submit {
+    left: 15px;
+    font-size: 1em;
+    padding: 5px 10px;
+    margin: 0;
+    width: 125px;
+  }
+
+  
+
+}
+
+/* Desktop and bigger view */
+@media screen and (min-width: 900px){
+
+  /* AUCTION PAGE */
+  #auction-content {
+    max-width: 1100px;
+  }
+  
   .auction-img {
     display: block;
     margin-top: 10px;
@@ -1305,7 +1607,8 @@ footer{
   .auction-img img {
     display: block;
     border-radius: 5pt;
-    width: 300px;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .auction-col1 {
@@ -1313,38 +1616,102 @@ footer{
     grid-row: 1;
   }
 
-  #auction-content form
-  {
-    grid-column: 2/3;
-    grid-row: 1/4;
-    width: 415px;
-  }
-
-  #auction-content form #auction-submit {
-    right: 10px;
-    font-size: 1.5em;
-    padding: 5px 10px;
-    margin: 0;
-    width: 125px;
-  }
-  
-  .auction-col2 {
+   .auction-col2 {
     grid-column: 3/4;
   }
 
   .auction-row1 {
     grid-row: 1/2;
-    margin-right: 10px;
+    /* margin-right: 10px; */
   }
   
   .auction-row2 {
     grid-row: 2/3;
-    margin-left: 10px;
+    /* margin-left: 10px; */
   }
   
   .auction-row3 {
     grid-row: 3/4;
-    margin-right: 10px;
+    /* margin-right: 10px; */
+  }
+
+  /* about */
+  #about{
+    margin: 10px auto;
+  }
+  #about > p {
+    margin:32px 12% 60px 12%; 
+  }
+  .about__item{
+    height:auto;
+    margin: 0 20%;
+  }
+  .sub-text1{
+    border-radius: 10px 10px 0 0;
+    
+  }
+  .sub-text2{
+    border-radius: 0 0 10px 10px;
+  }
+  .sub-text2 h2{
+    border-top: 1px solid #aaa;
+    margin-top: 16px;
+    padding-top:16px;
+  }
+  .sub-text2 p{
+    margin-bottom: 40px;
+  }
+  .sub-img1, .sub-img2{
+    display:none;
+  }
+  .members{
+    flex-flow:wrap;
+  }
+  /* --- contact --- */
+  #contact section{
+    flex-direction: column;
+  }
+  .message{
+    text-align:center;
+  }
+  .item{
+    width: 300px;
+  }
+  .item input{
+    width: 300px;
+  }
+  .message form textarea{
+    width: 300px;
+  }
+  .message form div, .message form textarea, .message form button{
+    margin: 8px auto;
+  }
+  .contact-info{
+    /* text-align:center; */
+    margin: auto;
+    padding:10px;
+  }
+  .contact-info h2{
+    text-align:center;
+  }
+
+  .inv-item {
+    height: auto;
+  }
+
+
+  /* ---------- footer ---------- */
+  .footer__logo{
+    display:none;
+  }
+  .bpa_footer__logo{
+    width: 80px;
+  }
+  .bpa_footer__logo img{
+    width: 100%;
+  }
+  #footer div p, #footer div a{
+    font-size: 14px;
   }
 
   /* about */
@@ -1575,7 +1942,6 @@ footer{
   .filter form {
     border-right: 1px solid #401410;
   }
-
   /* --------- about page --------- */
   #about{
     margin: 50px auto;
