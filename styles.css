@@ -1,7 +1,6 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Yeseva+One&display=swap');
+@import 'https://fonts.googleapis.com/css2?family=Poppins&family=Yeseva+One&display=swap';
 /* Fontawesome 4.7 */
-@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
 body {
     margin: 0;
     padding: 0;
@@ -618,25 +617,8 @@ header {
   color: var(--main-red);
 }
 
-
-#inv-page .range-slider__range {
-  height: 10px;
-  border-radius: 5px;
-  background: var(--gray);
-  outline: none;
-  padding: 0;
-  margin: 0;
-
-}
-
-.range-slider__range::--webkit-slider-thumb {
-  -webkit-appearance: none;
-          appearance: none;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: var(--main-red);
-  cursor: pointer;
+.carId {
+  display: none;
 }
 
 label{
@@ -714,6 +696,10 @@ label{
 .car-link {
   text-decoration: none;
   color: black;
+  background-color: white;
+  border: none;
+  text-align: left;
+  font-size: 1em;
 }
 
 .inv-item {
@@ -730,22 +716,24 @@ label{
   margin-bottom: 1em;
 
 }
-.more {
+#more {
   text-align: center;
   color: #401410;
+  text-decoration: underline;
+  margin-top: 1.6em;
 }
 
-.more:hover {
+#more:hover {
   color: var(--gray);
   cursor: pointer;
 }
 
 .inv-item:hover {
+  cursor: pointer;
   box-shadow: 5px 10px 18px var(--gray);
   transition: 0.3s;
   transform: translate(0px, -5px);
 }
-
 
 
 
@@ -1207,6 +1195,7 @@ footer{
 
   #auction-content p {
     text-align: center;
+  }
 }
 
 /* tablet view */
@@ -1481,88 +1470,7 @@ footer{
     font-size: 14px;
   }
 
-  /* about */
-  #about{
-    margin: 10px auto;
-  }
-  #about > p {
-    margin:32px 12% 60px 12%; 
-  }
-  .about__item{
-    height:auto;
-    margin: 0 20%;
-  }
-  .sub-text1{
-    border-radius: 10px 10px 0 0;
-    
-  }
-  .sub-text2{
-    border-radius: 0 0 10px 10px;
-  }
-  .sub-text2 h2{
-    border-top: 1px solid #aaa;
-    margin-top: 16px;
-    padding-top:16px;
-  }
-  .sub-text2 p{
-    margin-bottom: 40px;
-  }
-  .sub-img1, .sub-img2{
-    display:none;
-  }
-  .members{
-    flex-flow:wrap;
-  }
-  /* --- contact --- */
-  #contact section{
-    flex-direction: column;
-  }
-  .message{
-    text-align:center;
-  }
-  .item{
-    width: 300px;
-  }
-  .item input{
-    width: 300px;
-  }
-  .message form textarea{
-    width: 300px;
-  }
-  .message form div, .message form textarea, .message form button{
-    margin: 8px auto;
-  }
-  .contact-info{
-    /* text-align:center; */
-    margin: auto;
-    padding:10px;
-  }
-  .contact-info h2{
-    text-align:center;
-  }
 
-  .inv-item {
-    height: auto;
-  }
-
-
-  /* ---------- footer ---------- */
-  .footer__logo{
-    display:none;
-  }
-  .bpa_footer__logo{
-    width: 80px;
-  }
-  .bpa_footer__logo img{
-    width: 100%;
-  }
-  #footer div p, #footer div a{
-    font-size: 14px;
-  }
-}
-
-/* Desktop and bigger view */
-@media screen and (min-width: 900px){
   .flickity-viewport {
     height: 300px;
   }
@@ -1593,9 +1501,7 @@ footer{
     grid-column: 3;
     grid-row: 1;
   }
-}
 
-@media (min-width: 900px){
   header{
     position: fixed;
     font-family: var(--head-font);
@@ -1691,15 +1597,15 @@ footer{
   .inventory-grid {
       /* width: 100%;
       height: 85%; */
-      width: 75%;
+      width: 100%;
       height: 25%;
       overflow-y: auto;
       display: grid;
-      grid-template-columns: repeat(3, 33%);
+      grid-template-columns: repeat(3, 1fr);
   }
 
   .inv-item {
-    height: 31em;
+    height: 38em;
   }
 
   .filter {
@@ -2050,5 +1956,5 @@ footer{
   #footer div p, #footer div a{
     font-size: 16px;
   }
-}
-}
+ }
+
