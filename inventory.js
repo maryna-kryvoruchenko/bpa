@@ -25,34 +25,40 @@ searchBtn.addEventListener('click', function(){
     });
 });
 
-let filterBtn = document.querySelector('#filterBtn');
-filterBtn.addEventListener('click', function(){
-    fetch(requestURL)
-    .then (function (response) {
-        return response.json();
-    })
-    .then(function(jsonObject){
-        const carsObj = jsonObject['cars'];
-        filterBy(carsObj);
-    });
-});
+// let filterBtn = document.querySelector('#filterBtn');
+// filterBtn.addEventListener('click', function(){
+//     fetch(requestURL)
+//     .then (function (response) {
+//         return response.json();
+//     })
+//     .then(function(jsonObject){
+//         const carsObj = jsonObject['cars'];
+//         filterBy(carsObj);
+//     });
+// });
 
-function limit (string = '', limit = 0) {  
-    return string.substring(0, limit)
-}
+
+
+// function limit (string = '', limit = 0) {  
+//     return string.substring(0, limit)
+// }
 
 function displayInvItem(car){
     // template for car display
-    let template = `<a href="#" class="car-link">
+    let template = `<a href="./contact.html" class="car-link">
     <section class="inv-item">
     <img class="inv-image" src="${car.image}" alt="${car.year} ${car.make} ${car.model}">
     <h4>${car.year} ${car.make} ${car.model}</h4>
     <p class="prices">Purchase Price: $${car.buy} <br><span> Rental Price: $${car.rent} / day</span></p>
-    <p>Color: ${car.color} <br> ${limit(car.details, 50)}...</p>
-    <p class="more">Click to see more details</p>
+    <p>Color: ${car.color} <br> ${car.details}</p>
+    <p class="carId">${car.id}</p>
+    <p id="more">Set Up Appointment</p>
     </section></a>`;
     document.querySelector('.inventory-grid').innerHTML += template;
 }
+
+
+
 
 function searchBy(cars){
     //clearing template for newly searched inventory items
@@ -161,13 +167,22 @@ function searchBy(cars){
     
 }
 
-function filterBy(cars){
-    let template = '';
-    document.querySelector('.inventory-grid').innerHTML = template;
+// function filterBy(cars){
+//     let template = '';
+//     document.querySelector('.inventory-grid').innerHTML = template;
 
-    let filMake = document.querySelector('#fmake').value;
-    let filterArray = cars.filter(car=> car.make.toLowerCase() === filMake);
-    filterArray.forEach(displayInvItem);
+//     let filMake = document.querySelector('#fmake').value.toLowerCase();
+//     let filYear = document.querySelector('#fyear').value;
+//     if (filMake.length != 0){
+//         let filterArray = cars.filter(car=> new RegExp(filMake).test(car.make.toLowerCase()));
+//         filterArray.forEach(displayInvItem);
+//     }
+//     else if(filYear.length != 0){
+//         let filterArray = cars.filter(car=> new RegExp(filYear).test(car.year));
+//         filterArray.forEach(displayInvItem);
+//     }
+//     else if()
+
     
-}
+// }
 

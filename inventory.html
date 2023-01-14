@@ -9,6 +9,7 @@
     <script src="header.js" defer></script>
     <script src="chat.js" defer></script>
     <script src="https://kit.fontawesome.com/67ea2a523c.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
 
@@ -19,7 +20,7 @@
             <a class="navbar__menu__item" href="about.html" data-link="About"></a>
             <a class="navbar__menu__item" href="contact.html" data-link="Contact"></a>
             <a class="navbar__menu__item" href="auction.html" data-link="Auctions"></a>
-            <a class="navbar__menu__item" href="inventory.html"data-link="Inventory"></a>
+            <a class="navbar__menu__item" href="inventory.html" data-link="Inventory"></a>
         </div>
         <div class="navbar__toggle-btn">
             <span></span>
@@ -60,58 +61,14 @@
             </section>
         </div>
         <div class="inv-body">
-            <!-- side bar filter -->
-            <div class="filter">
-                <h3>Filter by:</h3>
-                <form method="get">
-                    <label for="fmake">Make</label>
-                    <select id="fmake">
-                        <option value=" ">-- Choose Make --</option>
-                        <option value="bmw">BMW</option>
-                        <option value="cadillac">Cadillac</option>
-                        <option value="chevrolet">Chevrolet</option>
-                        <option value="fiat">Fiat</option>
-                        <option value="ford">Ford</option>
-                        <option value="jaguar">Jaguar</option>
-                        <option value="mercedes-benz">Mercedes-Benz</option>
-                        <option value="pontiac">Pontiac</option>
-                        <option value="rolls royce">Rolls Royce</option>
-                        <option value="volkswagon">Volkswagon</option>
-                    </select>
-                    <label for="fyear">Year</label>
-                    <input type="number" name="year" id="fyear">
-                    
-                    <p>Color</p>
-                   
-                    <span><input type="checkbox" name="color" id="blue" value="blue">
-                    <label for="blue">Blue</label></span>
-             
-                    <span><input type="checkbox" name="color" id="black" value="black">
-                    <label for="black">Black</label></span>
-                 
-                    <span><input type="checkbox" name="color" id="orange" value="orange">
-                    <label for="orange">Orange</label></span>
-
-                    <span><input type="checkbox" name="color" id="red" value="red">
-                    <label for="red">Red</label></span>
-                    
-                    <span><input type="checkbox" name="color" id="silver" value="silver">
-                    <label for="silver">Silver</label></span>
-                    
-                    <span><input type="checkbox" name="color" id="white" value="white">
-                    <label for="white">White</label></span>
-                    
-                    <label for="pslider">Price Range</label>
-                    <input type="range" name="price" min="50" max="500,000" value="100,000" id="pslider">
-                    <output for="price" onforminput="value = price.valueAsNumber"></output>
-                </form>
-                <button type="submit" id="filterBtn">Filter</button>
-            </div>
+            
             <!-- all the cars will show up here using javascript and a json file -->
             <div class="inventory-grid">
                 
                 <!-- cars are input here through javascript in inventory.js -->
             </div>
+            
+            
         </div>
         <div class="chat-popup">
             <section class="chat-container">
