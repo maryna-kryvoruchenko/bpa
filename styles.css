@@ -1036,6 +1036,15 @@ footer{
     align-items: flex-start;
     /* background-color: #f2e2c4d2; */
   }
+  header.open{
+    background-color: #f2e2c4c5;
+  }
+  header.navbar--dark{
+    /* position:fixed; */
+    background-color: #f2e2c4d2;
+    /* opacity: 0.8; */
+    padding: 4px;
+  }
   .navbar__toggle-btn{
     display: block;
     width: 25px;
@@ -1129,6 +1138,34 @@ footer{
     grid-row: 2;
   }
 
+  /* --- contact --- */
+  #contact section{
+    flex-direction: column;
+  }
+  .message{
+    text-align:center;
+  }
+  .item{
+    width: 300px;
+  }
+  .item input{
+    width: 300px;
+  }
+  .message form textarea{
+    width: 300px;
+  }
+  .message form div, .message form textarea, .message form button{
+    margin: 8px auto;
+  }
+  .contact-info{
+    /* text-align:center; */
+    margin: auto;
+    padding:10px;
+  }
+  .contact-info h2{
+    text-align:center;
+  }
+
   /* about page */
 
   #about{
@@ -1158,6 +1195,9 @@ footer{
   }
   .sub-img1, .sub-img2{
     display:none;
+  }
+  .members{
+    flex-flow:wrap;
   }
 
 /* AUCTION PAGE */
@@ -1226,6 +1266,15 @@ footer{
     align-items: flex-start;
     /* background-color: #f2e2c4d2; */
   }
+  header.open{
+    background-color: #f2e2c4c5;
+  }
+  header.navbar--dark{
+    /* position:fixed; */
+    background-color: #f2e2c4d2;
+    /* opacity: 0.8; */
+    padding: 4px;
+  }
   .navbar__toggle-btn{
     display: block;
     width: 25px;
@@ -1277,6 +1326,39 @@ footer{
   }
   .navbar__menu a{
     margin-bottom:10px;
+  }
+
+  /* about */
+  #about{
+    margin: 10px auto;
+  }
+  #about > p {
+    margin:32px 12% 60px 12%; 
+  }
+  .about__item{
+    height:auto;
+    margin: 0 20%;
+  }
+  .sub-text1{
+    border-radius: 10px 10px 0 0;
+    
+  }
+  .sub-text2{
+    border-radius: 0 0 10px 10px;
+  }
+  .sub-text2 h2{
+    border-top: 1px solid #aaa;
+    margin-top: 16px;
+    padding-top:16px;
+  }
+  .sub-text2 p{
+    margin-bottom: 40px;
+  }
+  .sub-img1, .sub-img2{
+    display:none;
+  }
+  .members{
+    flex-flow:wrap;
   }
 
   #slider--text {
@@ -1421,9 +1503,8 @@ footer{
   .sub-text2 p{
     margin-bottom: 40px;
   }
-  .sub-img1, .sub-img2{
-    display:none;
-  }
+  
+  
   .members{
     flex-flow:wrap;
   }
