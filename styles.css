@@ -1100,6 +1100,9 @@ footer{
   .footer__logo{
     display:none;
   }
+  .bpa_footer__logo img{
+    width: 80px;
+  }
   #footer div{
     margin: 0 auto;
   }
@@ -1326,6 +1329,9 @@ footer{
   }
   .footer__logo{
     display:none;
+  }
+  .bpa_footer__logo img{
+    width: 80px;
   }
   #footer div{
     margin: 0 auto;
