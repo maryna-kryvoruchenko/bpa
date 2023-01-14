@@ -589,10 +589,6 @@ header {
   border-radius: 12px;
 }
 
-.top-search input:focus {
-
-  border: 1px solid var(--main-red);
-}
 
 .top-search form label {
   text-align: left;
@@ -600,7 +596,7 @@ header {
 }
 
 #topSearchBtn {
-  margin: 2.8em 1em auto 0;
+  margin: 2.5em 1em auto 0;
   padding: 0.5em 3em;
   font-size: 1em;
   font-family: var(--body-font);
@@ -632,6 +628,15 @@ label{
   flex-direction: column;
 }
 
+.top-search {
+  flex-direction: row;
+
+}
+
+.top-search form {
+  flex-direction: row;
+}
+
 .top-search{
   display: flex;
   flex-direction: column;
@@ -651,38 +656,6 @@ label{
   grid-column: 1/3;
 }
 
-.filter {
-  margin-left: 2em;
-}
-
-.filter form {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  padding-right: 2em;
-}
-
-.filter form select {
-  padding: .6em;
-  border-color: var(--gray);
-}
-
-#filterBtn {
-  padding: 0.5em 3em;
-  font-size: 1em;
-  font-family: var(--body-font);
-  background-color: var(--main-red);
-  color: var(--cream);
-  border: none;
-  border-radius: 12px;
-  transition: 0.4s;
-}
-
-#filterBtn:hover {
-  cursor: pointer;
-  background-color: var(--cream);
-  color: var(--main-red);
-}
 
 .inventory-grid {
   width: 100%;
@@ -1328,7 +1301,38 @@ footer{
   .inv-body {
     display: flex;
     flex-direction: column;
+  }
 
+  .inv-hero{
+    height: 20em;
+  }
+  #make{
+    border-radius: 12px 0 0 12px;
+  }
+  #inv-page input {
+    border-radius: 0px;
+  }
+  .top-search {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .top-search form {
+    display: flex;
+    flex-direction: row;
+  }
+  #topSearchBtn {
+    border-radius: 0 12px 12px 0;
+  }
+  .inventory-grid {
+    width: 100%;
+    height: 25%;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+  .inv-item {
+    height:34em;
   }
    
   #auctionCount {
@@ -1454,7 +1458,7 @@ footer{
   .inv-item {
     height: auto;
   }
-
+ 
 
   /* ---------- footer ---------- */
   .footer__logo{
@@ -1608,13 +1612,8 @@ footer{
     height: 38em;
   }
 
-  .filter {
-    width: 25%;
-  }
+  .top-search
 
-  .filter form {
-    border-right: 1px solid #401410;
-  }
   /* --------- about page --------- */
   #about{
     margin: 50px auto;
