@@ -1279,7 +1279,9 @@ footer{
     position:absolute;
     top:26px;
     right:15px;
+    cursor: pointer
   }
+  
   .navbar__toggle-btn span{
     background-color: var(--main-red);
     height: 2px;
