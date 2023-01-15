@@ -158,7 +158,7 @@
         },
         {
             "id": 15,
-            "make": "Volkswagon",
+            "make": "Volkswagen",
             "model": "Beetle",
             "year": 1970,
             "color": "Blue",
@@ -180,7 +180,7 @@
         },
         {
             "id": 17,
-            "make": "Volkswagon",
+            "make": "Volkswagen",
             "model": "Beetle",
             "year": 1972,
             "color": "Orange",
@@ -213,7 +213,7 @@
         },
         {
             "id": 20,
-            "make": "Volkswagon",
+            "make": "Volkswagen",
             "model": "Transport",
             "year": 1972,
             "color": "Orange",
