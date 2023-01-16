@@ -364,7 +364,7 @@ span, a, p, label {
   box-sizing: border-box;
   color: #fff;
   text-align: center;
-  padding-top: 120px;
+  padding-top: 200px;
   box-sizing: border-box;
   transition: 0.5s;
 }
@@ -373,7 +373,7 @@ span, a, p, label {
 }
 
 .card:nth-child(1) .content {
-  padding-top: 100px;
+  padding-top: 180px;
   background: linear-gradient(to top, #e74c3c, transparent);
 }
 .card:nth-child(2) .content {
@@ -1549,7 +1549,6 @@ footer{
     margin-bottom: 40px;
   }
   
-  
   .members{
     flex-flow:wrap;
   }
@@ -1889,7 +1888,7 @@ footer{
     box-sizing: border-box;
     color: #fff;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 200px;
     box-sizing: border-box;
     transition: 0.5s;
   }
@@ -1898,7 +1897,7 @@ footer{
   }
   
   .card:nth-child(1) .content {
-    padding-top: 100px;
+    padding-top: 180px;
     background: linear-gradient(to top, #e74c3c, transparent);
   }
   .card:nth-child(2) .content {
